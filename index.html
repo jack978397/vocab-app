@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>單字資產庫</title>
+<link rel="manifest" href="manifest.json">
+<style>
+:root{--bg:#f4f5fb;--card:#fff;--ink:#1e2235;--sub:#6b7280;--brand:#4f46e5;--ok:#16a34a;--warn:#d97706;--bad:#dc2626;--line:#e5e7eb}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink);padding-bottom:74px}
+header{background:var(--brand);color:#fff;padding:14px 16px;font-size:18px;font-weight:700}
+main{padding:14px;max-width:640px;margin:0 auto}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#fff;border-top:1px solid var(--line);z-index:5}
+nav button{flex:1;padding:8px 0 12px;border:0;background:none;font-size:12px;color:var(--sub);cursor:pointer}
+nav button.on{color:var(--brand);font-weight:700}
+nav button span{display:block;font-size:20px}
+.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+h2{font-size:16px;margin-bottom:8px}
+.big{font-size:32px;font-weight:800}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;background:#eef0ff;color:var(--brand);margin:2px 4px 2px 0}
+button.btn{display:block;border:0;border-radius:10px;padding:12px 16px;font-size:15px;font-weight:600;background:var(--brand);color:#fff;width:100%;margin-top:10px;cursor:pointer}
+button.ghost{background:#eef0ff;color:var(--brand)}
+.rate{display:flex;gap:8px;margin-top:4px}
+.rate button{flex:1}
+.b-again{background:var(--bad)}.b-hard{background:var(--warn)}.b-good{background:var(--ok)}
+.rate small{display:block;font-weight:400;font-size:11px;opacity:.85}
+textarea,input[type=text],input[type=password],input[type=number],select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font-size:15px;margin-top:6px;background:#fff}
+textarea{min-height:88px;font-family:ui-monospace,monospace;font-size:13px}
+label.sub{display:block;margin-top:10px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:12px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.sub{color:var(--sub);font-size:13px}
+.sec{margin:12px 0 4px;font-weight:700;font-size:14px;color:var(--brand)}
+.hid{display:none}
+.spk{background:none;border:0;font-size:22px;vertical-align:middle;cursor:pointer}
+.stat{display:flex;gap:10px;text-align:center;margin-bottom:12px}
+.stat div{flex:1;background:#fff;border-radius:12px;padding:12px}
+.stat b{font-size:22px;display:block}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-end;z-index:9}
+#modal.on{display:flex}
+#modalBox{background:#fff;border-radius:18px 18px 0 0;max-height:85vh;overflow:auto;width:100%;padding:18px;max-width:640px;margin:0 auto}
+.ok{color:var(--ok);font-weight:700}.bad{color:var(--bad);font-weight:700}
+</style>
+</head>
+<body>
+<header>📚 單字資產庫</header>
+<main>
+  <section id="p-today"></section>
+  <section id="p-review" class="hid"></section>
+  <section id="p-query" class="hid"></section>
+  <section id="p-lib" class="hid"></section>
+  <section id="p-set" class="hid"></section>
+</main>
+<div id="modal" onclick="if(event.target.id==='modal')closeModal()"><div id="modalBox"></div></div>
+<nav>
+  <button data-p="today" class="on"><span>📅</span>今日</button>
+  <button data-p="review"><span>🎴</span>複習</button>
+  <button data-p="query"><span>🔍</span>查單字</button>
+  <button data-p="lib"><span>🗂️</span>字庫</button>
+  <button data-p="set"><span>⚙️</span>設定</button>
+</nav>
+<script>
+"use strict";
+/* ============================================================
+   單字資產庫 v1 — 架構四層(對應「使用與架構說明.md」的導讀)
+   [1] 資料層   — SEED_WORDS 內建字庫 + localStorage 儲存
+   [2] 排程引擎 — 間隔重複(INTERVALS + rate())
+   [3] 查詢引擎 — Gemini API 或「複製 prompt」橋接
+   [4] 畫面層   — 五個頁籤各一個 render 函式
+   ============================================================ */
+
+/* ---------- [1] 資料層 ---------- */
+/* 複習間隔(第1次→第10次)。想調整就改這裡,單位是毫秒 */
+const INTERVALS=[10*60e3, 60*60e3, 12*3600e3, 1*86400e3, 2*86400e3, 4*86400e3, 7*86400e3, 14*86400e3, 30*86400e3, 60*86400e3];
+const LEVELS=['A1','A2','B1','B2','C1','C2'];
+const SEED_WORDS=[
+{"word":"invoice","level":"B1","toeic_freq":"high","pron_easy":"因-佛伊斯","kk":"ˈɪnvɔɪs","etymology":"源自法文 envois「寄送之物」→ 隨貨寄出的清單 → 請款單","pos_forms":[{"form":"invoice","type":"n.","zh":"請款單、發票"},{"form":"invoice","type":"v.","zh":"開立請款單"}],"collocations":["issue an invoice","pay an invoice","invoice number"],"synonyms":[{"word":"receipt","diff":"收據,是付款「後」的證明;invoice 是付款「前」的請款"},{"word":"bill","diff":"帳單,口語通用;invoice 較正式、商用"}],"examples":[{"en":"Please settle the invoice within 30 days.","zh":"請於 30 天內支付這筆請款。","tag":"toeic"},{"en":"Could you send me the invoice by email?","zh":"可以把請款單用 email 寄給我嗎?","tag":"daily"}],"usage":"商務往來請款用 invoice;餐廳結帳說 bill 或 check。TOEIC Part 7 的商業書信題超常見。"},
+{"word":"refund","level":"A2","toeic_freq":"high","pron_easy":"瑞-放的","kk":"ˈrifʌnd","etymology":"re-(回)+ fund(資金)→ 錢流回來 → 退款","pos_forms":[{"form":"refund","type":"n./v.","zh":"退款"},{"form":"refundable","type":"adj.","zh":"可退款的"}],"collocations":["full refund","request a refund","refund policy"],"synonyms":[{"word":"reimburse","diff":"報銷:公司還你代墊的錢;refund 是店家退你買貴/退貨的錢"},{"word":"return","diff":"退「貨」;refund 是退「錢」,常一起出現"}],"examples":[{"en":"Customers may request a full refund within 14 days.","zh":"顧客可於 14 天內要求全額退款。","tag":"toeic"},{"en":"I'd like a refund for this. It doesn't work.","zh":"這個壞了,我想退款。","tag":"daily"}],"usage":"refund 退錢、return 退貨、exchange 換貨,三兄弟常一起考,別搞混。"},
+{"word":"negotiate","level":"B1","toeic_freq":"high","pron_easy":"尼-夠-西-耶特","kk":"nɪˈɡoʃɪˌet","etymology":"neg-(不)+ otium(閒暇)→ 忙到不得閒 → 談生意 → 談判","pos_forms":[{"form":"negotiate","type":"v.","zh":"談判、協商"},{"form":"negotiation","type":"n.","zh":"談判"},{"form":"negotiable","type":"adj.","zh":"可商量的"}],"collocations":["negotiate a contract","negotiate with","under negotiation"],"synonyms":[{"word":"bargain","diff":"討價還價,偏日常買東西殺價"},{"word":"discuss","diff":"中性的討論,沒有攻防、達成協議的意味"}],"examples":[{"en":"We are negotiating the terms of the merger.","zh":"我們正在協商合併條款。","tag":"toeic"},{"en":"The price is negotiable if you buy two.","zh":"買兩個的話價錢可以談。","tag":"daily"}],"usage":"negotiate with + 人、negotiate for/over + 事。求職看到 salary negotiable 就是「薪資面議」。"},
+{"word":"deadline","level":"A2","toeic_freq":"high","pron_easy":"德的-賴恩","kk":"ˈdɛdˌlaɪn","etymology":"dead + line,源自戰俘營「越線即格殺」的界線 → 不可跨越的期限","pos_forms":[{"form":"deadline","type":"n.","zh":"截止期限"}],"collocations":["meet a deadline","miss the deadline","tight deadline"],"synonyms":[{"word":"due date","diff":"到期日,偏帳單、作業的繳交日"},{"word":"time limit","diff":"時間上限,講的是「時長」不是「時點」"}],"examples":[{"en":"We have to meet the deadline for the proposal.","zh":"我們必須趕上提案的截止期限。","tag":"toeic"},{"en":"Sorry, I'm swamped—my deadline is tomorrow.","zh":"抱歉我忙翻了,明天就是死線。","tag":"daily"}],"usage":"meet(趕上)/ miss(錯過)/ extend(延長)+ deadline 是固定搭配,選擇題最愛考搭配動詞。"},
+{"word":"schedule","level":"A2","toeic_freq":"high","pron_easy":"斯給-九","kk":"ˈskɛdʒʊl","etymology":"拉丁文 schedula「小紙片」→ 寫行程的紙 → 時間表","pos_forms":[{"form":"schedule","type":"n.","zh":"時間表、行程"},{"form":"schedule","type":"v.","zh":"排定"},{"form":"scheduled","type":"adj.","zh":"預定的"}],"collocations":["on schedule","behind schedule","schedule a meeting"],"synonyms":[{"word":"timetable","diff":"固定週期的表(課表、火車時刻表)"},{"word":"agenda","diff":"單次會議要談的項目清單"}],"examples":[{"en":"The project is running behind schedule.","zh":"專案進度落後了。","tag":"toeic"},{"en":"Let me check my schedule and get back to you.","zh":"我看一下行程再回你。","tag":"daily"}],"usage":"on schedule 準時、ahead of schedule 超前、behind schedule 落後——介系詞搭配必考。"},
+{"word":"confirm","level":"A2","toeic_freq":"high","pron_easy":"肯-福爾姆","kk":"kənˈfɝm","etymology":"con-(加強)+ firm(穩固)→ 使其穩固 → 確認","pos_forms":[{"form":"confirm","type":"v.","zh":"確認"},{"form":"confirmation","type":"n.","zh":"確認(信)"}],"collocations":["confirm a reservation","confirm receipt","confirmation email"],"synonyms":[{"word":"verify","diff":"查證真偽,偏「核對事實」"},{"word":"approve","diff":"批准,是上對下的同意"}],"examples":[{"en":"Please confirm your attendance by Friday.","zh":"請於週五前確認出席。","tag":"toeic"},{"en":"Just to confirm—we're meeting at 7, right?","zh":"確認一下,我們七點見對吧?","tag":"daily"}],"usage":"訂房訂位後收到的那封信就叫 confirmation。confirm + that 子句也很常見。"},
+{"word":"shipment","level":"B1","toeic_freq":"high","pron_easy":"序普-悶特","kk":"ˈʃɪpmənt","etymology":"ship(船運 → 泛指運送)+ -ment(名詞化)→ 送出的一批貨","pos_forms":[{"form":"shipment","type":"n.","zh":"出貨、一批貨"},{"form":"ship","type":"v.","zh":"運送、寄出"},{"form":"shipping","type":"n.","zh":"運送、運費"}],"collocations":["delay the shipment","shipment of goods","track a shipment"],"synonyms":[{"word":"delivery","diff":"送達,偏「最後送到你手上」那段"},{"word":"cargo","diff":"運輸中的貨物本身,不是「出貨」這個動作"}],"examples":[{"en":"The shipment was delayed due to the storm.","zh":"這批貨因暴風雨延誤了。","tag":"toeic"},{"en":"My shipment is stuck in customs.","zh":"我的包裹卡在海關了。","tag":"daily"}],"usage":"ship 現在泛指任何寄送方式,不限船運。網購常見 shipping fee 就是運費。"},
+{"word":"budget","level":"A2","toeic_freq":"high","pron_easy":"巴-集特","kk":"ˈbʌdʒɪt","etymology":"古法文 bougette「小皮袋」→ 裝錢的袋子 → 預算","pos_forms":[{"form":"budget","type":"n.","zh":"預算"},{"form":"budget","type":"v.","zh":"編列預算"},{"form":"budget","type":"adj.","zh":"平價的"}],"collocations":["tight budget","over budget","annual budget"],"synonyms":[{"word":"fund","diff":"資金,指錢本身;budget 是「規劃好要花的額度」"},{"word":"cost","diff":"成本,實際花掉的錢"}],"examples":[{"en":"The marketing budget was cut by 20 percent.","zh":"行銷預算被砍了兩成。","tag":"toeic"},{"en":"We're on a tight budget this month.","zh":"我們這個月手頭很緊。","tag":"daily"}],"usage":"budget airline 廉航、budget hotel 平價旅館——當形容詞是「平價」的意思,不是「有預算的」。"},
+{"word":"contract","level":"B1","toeic_freq":"high","pron_easy":"康-崔克特","kk":"ˈkɑntrækt","etymology":"con-(共同)+ tract(拉)→ 把雙方拉在一起 → 契約","pos_forms":[{"form":"contract","type":"n.","zh":"契約"},{"form":"contract","type":"v.","zh":"簽約;收縮"},{"form":"contractor","type":"n.","zh":"承包商"},{"form":"contractual","type":"adj.","zh":"契約上的"}],"collocations":["sign a contract","breach of contract","under contract"],"synonyms":[{"word":"agreement","diff":"協議,較廣義也較口語;contract 有法律效力"},{"word":"deal","diff":"交易,口語,「成交」的那個 deal"}],"examples":[{"en":"Both parties signed the contract yesterday.","zh":"雙方昨天簽署了合約。","tag":"toeic"},{"en":"My phone contract ends next month.","zh":"我的手機約下個月到期。","tag":"daily"}],"usage":"名詞重音在前(CON-tract)、動詞重音在後(con-TRACT),聽力常拿這個做梗。"},
+{"word":"estimate","level":"B1","toeic_freq":"high","pron_easy":"耶斯-提-妹特","kk":"ˈɛstəˌmet","etymology":"estim(評價,與 esteem「尊重」同源)→ 給出價值判斷 → 估計","pos_forms":[{"form":"estimate","type":"v.","zh":"估計"},{"form":"estimate","type":"n.","zh":"估價單、概估"},{"form":"estimated","type":"adj.","zh":"預估的"}],"collocations":["rough estimate","cost estimate","estimate at"],"synonyms":[{"word":"quotation","diff":"正式報價,通常有約束力;estimate 只是概估"},{"word":"guess","diff":"純猜,沒有依據;estimate 有數據或經驗基礎"}],"examples":[{"en":"The contractor gave us an estimate for the repairs.","zh":"承包商給了我們修繕的估價單。","tag":"toeic"},{"en":"Just give me a rough estimate, not exact numbers.","zh":"給我個大概就好,不用精確數字。","tag":"daily"}],"usage":"動詞唸 -meit、名詞唸 -mət:拼字相同、發音不同,聽力考點。"},
+{"word":"applicant","level":"B1","toeic_freq":"high","pron_easy":"阿-普利-肯特","kk":"ˈæpləkənt","etymology":"ap-(去)+ plic(摺疊、貼附)+ -ant(人)→ 把自己資料「附」上去的人 → 申請者","pos_forms":[{"form":"applicant","type":"n.","zh":"申請者、應徵者"},{"form":"apply","type":"v.","zh":"申請"},{"form":"application","type":"n.","zh":"申請(書)"}],"collocations":["job applicant","successful applicant","screen applicants"],"synonyms":[{"word":"candidate","diff":"候選人,已進入考慮名單;applicant 是所有來申請的人"}],"examples":[{"en":"All applicants must submit a resume by May 1.","zh":"所有申請者須於 5 月 1 日前繳交履歷。","tag":"toeic"},{"en":"There were over 100 applicants for that position.","zh":"那個職位有超過一百人應徵。","tag":"daily"}],"usage":"TOEIC 徵才情境必出。小心陷阱字 appliance(家電)——長得像但無關。"},
+{"word":"colleague","level":"A2","toeic_freq":"high","pron_easy":"咖-力格","kk":"ˈkɑlig","etymology":"col-(共同)+ league(選派,字根 leg-「選」)→ 一起被選派工作的人 → 同事","pos_forms":[{"form":"colleague","type":"n.","zh":"同事"}],"collocations":["former colleague","colleagues and clients","a colleague of mine"],"synonyms":[{"word":"coworker","diff":"美式口語的同事,不一定同專業"},{"word":"peer","diff":"同儕,指地位、層級相當的人"}],"examples":[{"en":"I'd like to introduce my colleague, Ms. Chen.","zh":"讓我介紹我的同事陳小姐。","tag":"toeic"},{"en":"I'm grabbing lunch with a colleague.","zh":"我要跟同事去吃午餐。","tag":"daily"}],"usage":"拼字陷阱:colleague(同事)vs. college(大學),聽力和閱讀都愛拿這對字作梗。"},
+{"word":"warranty","level":"B1","toeic_freq":"high","pron_easy":"握-潤-踢","kk":"ˈwɔrəntɪ","etymology":"war-/guar-(保護,與 guarantee 同源)→ 保護的承諾 → 保固","pos_forms":[{"form":"warranty","type":"n.","zh":"保固"}],"collocations":["under warranty","extended warranty","one-year warranty"],"synonyms":[{"word":"guarantee","diff":"保證,較廣義、也可指口頭承諾;warranty 專指書面保固條款"}],"examples":[{"en":"The laptop comes with a two-year warranty.","zh":"這台筆電附兩年保固。","tag":"toeic"},{"en":"Is it still under warranty?","zh":"這還在保固內嗎?","tag":"daily"}],"usage":"「在保固內」是 under warranty,介系詞用 under 不用 in,固定用法。"},
+{"word":"itinerary","level":"B2","toeic_freq":"medium","pron_easy":"艾-踢-呢-瑞-理","kk":"aɪˈtɪnəˌrɛrɪ","etymology":"itiner(旅程,拉丁文 iter「路」)+ -ary → 行程表","pos_forms":[{"form":"itinerary","type":"n.","zh":"(旅行)行程表"}],"collocations":["travel itinerary","detailed itinerary","plan an itinerary"],"synonyms":[{"word":"schedule","diff":"泛用時間表;itinerary 專指「旅行」的行程"},{"word":"route","diff":"路線,只講走哪條路,不含時間安排"}],"examples":[{"en":"The travel agency emailed us the full itinerary.","zh":"旅行社把完整行程表寄給我們了。","tag":"toeic"},{"en":"What's on the itinerary for tomorrow?","zh":"明天行程有什麼?","tag":"daily"}],"usage":"TOEIC 出差、旅遊情境常客。字很長但只考聽讀不考拼,看得懂就贏。"},
+{"word":"revenue","level":"B2","toeic_freq":"high","pron_easy":"瑞-佛-紐","kk":"ˈrɛvəˌnu","etymology":"re-(回)+ ven(來,同 venue)→ 流回來的錢 → 營收","pos_forms":[{"form":"revenue","type":"n.","zh":"營收、歲入"}],"collocations":["annual revenue","revenue growth","generate revenue"],"synonyms":[{"word":"income","diff":"收入,個人或公司都能用"},{"word":"profit","diff":"利潤 = 營收 − 成本,兩者常被搞混!"}],"examples":[{"en":"The company's revenue rose 15% last quarter.","zh":"公司上季營收成長 15%。","tag":"toeic"},{"en":"Most of their revenue comes from ads.","zh":"他們大部分營收來自廣告。","tag":"daily"}],"usage":"revenue 是「總收入」,profit 是「扣掉成本剩下的」——圖表題兩個常一起出現,務必分清。"},
+{"word":"postpone","level":"B1","toeic_freq":"high","pron_easy":"破斯特-砰","kk":"posˈpon","etymology":"post-(之後)+ pone(放置,字根 pos)→ 往後放 → 延期","pos_forms":[{"form":"postpone","type":"v.","zh":"延期"},{"form":"postponement","type":"n.","zh":"延期"}],"collocations":["postpone until","postpone indefinitely","be postponed"],"synonyms":[{"word":"delay","diff":"延誤,常是被動發生;postpone 是主動決定改期"},{"word":"put off","diff":"口語版的 postpone,意思幾乎相同"}],"examples":[{"en":"The meeting has been postponed until next Tuesday.","zh":"會議延到下週二了。","tag":"toeic"},{"en":"Can we postpone dinner to Friday?","zh":"晚餐可以改到星期五嗎?","tag":"daily"}],"usage":"postpone + until/to + 新時間;後面接動作要用 V-ing(postpone signing the contract)。"},
+{"word":"purchase","level":"B1","toeic_freq":"high","pron_easy":"破-賊斯","kk":"ˈpɝtʃəs","etymology":"pur-(向前)+ chase(追)→ 追求而取得 → 購買","pos_forms":[{"form":"purchase","type":"v./n.","zh":"購買"},{"form":"purchaser","type":"n.","zh":"買方"}],"collocations":["make a purchase","proof of purchase","purchase order"],"synonyms":[{"word":"buy","diff":"一般口語;purchase 是正式書面用字,TOEIC 幾乎都用它"}],"examples":[{"en":"Keep the receipt as proof of purchase.","zh":"請保留收據作為購買證明。","tag":"toeic"},{"en":"You can return it within 30 days of purchase.","zh":"購買後 30 天內可退貨。","tag":"daily"}],"usage":"看到 buy 的正式版就是它。purchase order(PO)採購單是辦公室高頻詞。"},
+{"word":"inventory","level":"B2","toeic_freq":"medium","pron_easy":"因-悶-透-理","kk":"ˈɪnvənˌtɔrɪ","etymology":"in- + vent(來 → 找到,與 invent 同源)+ -ory → 清點所找到之物 → 庫存清單","pos_forms":[{"form":"inventory","type":"n.","zh":"庫存、盤點"}],"collocations":["take inventory","inventory management","in inventory"],"synonyms":[{"word":"stock","diff":"庫存,較口語;inventory 偏正式與帳務用法"}],"examples":[{"en":"We take inventory at the end of every month.","zh":"我們每月底盤點庫存。","tag":"toeic"},{"en":"Let me check if we have it in inventory.","zh":"我查一下庫存有沒有這個。","tag":"daily"}],"usage":"take inventory 是「盤點」;引申也能說 take inventory of your life(盤點人生)。"},
+{"word":"agenda","level":"B1","toeic_freq":"high","pron_easy":"阿-箭-達","kk":"əˈdʒɛndə","etymology":"ag(做,拉丁 agere)+ -enda(該做的事)→ 待辦事項清單 → 議程","pos_forms":[{"form":"agenda","type":"n.","zh":"議程、待辦事項"}],"collocations":["on the agenda","set the agenda","first item on the agenda"],"synonyms":[{"word":"schedule","diff":"整體時間表;agenda 是「單次會議」要談的項目"},{"word":"plan","diff":"計畫,範圍更廣更模糊"}],"examples":[{"en":"The budget is the first item on the agenda.","zh":"預算是議程的第一項。","tag":"toeic"},{"en":"What's on your agenda today?","zh":"你今天有什麼安排?","tag":"daily"}],"usage":"hidden agenda「不可告人的目的」是常見引申義,日常對話會出現。"},
+{"word":"promote","level":"B1","toeic_freq":"high","pron_easy":"普若-摸特","kk":"prəˈmot","etymology":"pro-(向前)+ mote(移動,字根 mov)→ 把人或物往前推 → 升遷;促銷","pos_forms":[{"form":"promote","type":"v.","zh":"升遷;推廣"},{"form":"promotion","type":"n.","zh":"升遷;促銷活動"},{"form":"promotional","type":"adj.","zh":"宣傳的"}],"collocations":["be promoted to","promote a product","get a promotion"],"synonyms":[{"word":"advertise","diff":"打廣告,只講宣傳手段;promote 涵蓋更廣的推廣行為"},{"word":"upgrade","diff":"升級「物品或方案」,不用在人身上"}],"examples":[{"en":"She was promoted to regional manager.","zh":"她升任區域經理了。","tag":"toeic"},{"en":"They're promoting the new app with a free trial.","zh":"他們用免費試用推廣新 App。","tag":"daily"}],"usage":"一字雙義(升官/促銷)都是 TOEIC 核心考點;promotion 同樣雙義,靠上下文判斷。"}
+];
+
+let S=load();
+function load(){
+  try{const raw=localStorage.getItem('vocabV1');if(raw){const d=JSON.parse(raw);
+    d.set=Object.assign({key:'',model:'gemini-2.5-flash',kk:false,group:10,levels:[...LEVELS],ghRepo:'',ghToken:''},d.set||{});
+    return d}}catch(e){}
+  return {words:{},srs:{},pending:[],set:{key:'',model:'gemini-2.5-flash',kk:false,group:10,levels:[...LEVELS],ghRepo:'',ghToken:''}};
+}
+function save(){localStorage.setItem('vocabV1',JSON.stringify(S))}
+(function initSeed(){let n=0;SEED_WORDS.forEach(w=>{if(!S.words[w.word]){S.words[w.word]=w;n++}});if(n)save()})();
+
+const now=()=>Date.now();
+const $=id=>document.getElementById(id);
+const attr=s=>String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+function dueList(){return Object.keys(S.srs).filter(w=>S.words[w]&&!S.srs[w].done&&S.srs[w].due<=now())}
+/* 已背起來:移出每日複習但保留卡片與進度,可隨時恢復 */
+function masterWord(w){if(!S.srs[w])S.srs[w]={stage:INTERVALS.length-1,due:now(),lapses:0};S.srs[w].done=true;save()}
+function unmasterWord(w){if(S.srs[w]){S.srs[w].done=false;S.srs[w].due=now();save()}}
+/* 等級過濾:沒勾的等級不排入新字組。等級未知(?)的字一律保留 */
+function lvlOk(e){const L=String(e.level||'').toUpperCase().slice(0,2);return !LEVELS.includes(L)||S.set.levels.includes(L)}
+function newList(){return Object.keys(S.words).filter(w=>!S.srs[w]&&lvlOk(S.words[w]))}
+function toggleLvl(l,on){const s=new Set(S.set.levels);if(on)s.add(l);else s.delete(l);S.set.levels=[...s];save();renderSet()}
+function startGroup(){
+  const ws=newList().slice(0,S.set.group);
+  ws.forEach(w=>S.srs[w]={stage:0,due:now(),lapses:0,fresh:true});
+  save();return ws.length;
+}
+
+/* ---------- [2] 排程引擎 ---------- */
+function rate(w,g){
+  const r=S.srs[w];if(!r)return;
+  if(g==='good'){r.stage=Math.min(r.stage+1,INTERVALS.length-1);r.due=now()+INTERVALS[r.stage]}
+  else if(g==='hard'){r.due=now()+Math.max(10*60e3,INTERVALS[r.stage]/2)}
+  else{r.stage=Math.max(0,r.stage-2);r.due=now()+10*60e3;r.lapses++}
+  r.fresh=false;save();
+}
+function fmt(ms){if(ms<3600e3)return Math.round(ms/60e3)+' 分鐘';if(ms<86400e3)return Math.round(ms/3600e3)+' 小時';return Math.round(ms/86400e3)+' 天'}
+function nextGap(w){const r=S.srs[w];return fmt(INTERVALS[Math.min(r.stage+1,INTERVALS.length-1)])}
+
+/* ---------- 發音(瀏覽器內建語音,免費) ---------- */
+function speak(t){
+  if(!('speechSynthesis' in window)){alert('此瀏覽器不支援發音');return}
+  const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.95;
+  speechSynthesis.cancel();speechSynthesis.speak(u);
+}
+const spk=t=>`<button class="spk" data-t="${attr(t)}" onclick="event.stopPropagation();speak(this.dataset.t)">🔊</button>`;
+const badge=t=>`<span class="badge">${t}</span>`;
+
+/* ---------- [3] 查詢引擎 ---------- */
+const PROMPT_HEAD=`你是英文單字卡片產生器。針對我給的單字,只輸出純 JSON,不要任何其他文字。格式:
+{
+  "word": "單字",
+  "level": "CEFR 等級(A1~C2)",
+  "toeic_freq": "high / medium / low(TOEIC 出題頻率)",
+  "kk": "KK 音標",
+  "etymology": "字根字源拆解,例:con-(共同)+ tract(拉)→ 拉在一起 → 契約",
+  "pos_forms": [ {"form":"contract","type":"n.","zh":"契約"}, {"form":"contractual","type":"adj.","zh":"契約上的"} ],
+  "collocations": ["sign a contract","breach of contract","contract with"],
+  "synonyms": [ {"word":"相似字","diff":"和本字差異的一句話中文說明"} ],
+  "examples": [ {"en":"TOEIC 商務情境例句","zh":"中文翻譯","tag":"toeic"}, {"en":"日常對話例句","zh":"中文翻譯","tag":"daily"} ],
+  "usage": "用法說明 2-3 句(中文):使用時機、和相近字的差別,不要只給翻譯"
+}
+規則:多個單字時輸出 JSON 陣列;相似字給 2-3 個;不確定的資訊寫 "unverified",不要編造;例句要自然、實際會用到的,不要教科書腔。
+重要:所有欄位的文字內容裡禁止出現英文雙引號 ",要引用英文詞語時改用單引號 ' 或中文引號「」,否則 JSON 會解析失敗。
+
+單字:`;
+function buildPrompt(list){return PROMPT_HEAD+list.join(', ')}
+async function copyText(t,msg){try{await navigator.clipboard.writeText(t);alert(msg||'已複製!貼給 Gemini 後,把它回的 JSON 貼回「貼回結果」框')}catch(e){prompt('自動複製失敗,請手動全選複製:',t)}}
+
+/* ---------- 雲端字庫(同 repo 的 words.json,讀取免金鑰) ---------- */
+async function pullCloudWords(){
+  if(!location.protocol.startsWith('http'))return alert('這功能要在部署後的網址(GitHub Pages)上使用;直接開本機檔案沒有雲端可抓。');
+  try{
+    const res=await fetch('./words.json?nocache='+Date.now());
+    if(!res.ok)throw new Error(res.status===404?'repo 裡還沒有 words.json,先用「複製字庫 JSON」建一個':'HTTP '+res.status);
+    const list=await res.json();
+    let added=0,updated=0;
+    (Array.isArray(list)?list:[list]).forEach(x=>{
+      if(!x||!x.word)return;
+      if(!S.words[x.word])added++;else updated++;
+      S.words[x.word]=x; /* 內容以雲端為準;複習進度(srs)完全不動 */
+    });
+    save();alert('字庫更新完成:新增 '+added+' 字、內容更新 '+updated+' 字。你的複習進度不受影響。');
+  }catch(e){alert('更新失敗:'+e.message)}
+}
+function copyWordsJSON(){copyText(JSON.stringify(Object.values(S.words),null,1),'已複製整個字庫 JSON!到 GitHub 開啟 words.json → 編輯 → 全選貼上 → Commit,其他裝置就能「從雲端更新」拿到。')}
+/* 一鍵上傳:用 GitHub Contents API 直接 commit words.json(需 fine-grained token) */
+async function pushCloudWords(){
+  const repo=(S.set.ghRepo||'').trim(),tok=(S.set.ghToken||'').trim();
+  if(!repo||!tok)return alert('請先在下方填「repo(帳號/repo名)」和 GitHub token,或改用「複製字庫 JSON」手動貼。');
+  const api='https://api.github.com/repos/'+repo+'/contents/words.json';
+  const hdr={'Authorization':'Bearer '+tok,'Accept':'application/vnd.github+json'};
+  try{
+    let sha=null;
+    const g=await fetch(api,{headers:hdr});
+    if(g.ok)sha=(await g.json()).sha;
+    else if(g.status!==404)throw new Error('讀取 repo 失敗 HTTP '+g.status+'(檢查 repo 名稱與 token 權限)');
+    const content=btoa(unescape(encodeURIComponent(JSON.stringify(Object.values(S.words),null,1))));
+    const body={message:'update words.json ('+Object.keys(S.words).length+' words)',content};
+    if(sha)body.sha=sha;
+    const p=await fetch(api,{method:'PUT',headers:hdr,body:JSON.stringify(body)});
+    if(!p.ok){const j=await p.json().catch(()=>({}));throw new Error('上傳失敗 HTTP '+p.status+(j.message?':'+j.message:''))}
+    alert('已上傳到 GitHub!共 '+Object.keys(S.words).length+' 字。其他裝置按「從雲端更新字庫」即可取得(Pages 快取可能延遲幾分鐘)。');
+  }catch(e){alert(e.message)}
+}
+/* 修復弱模型常見的 JSON 錯誤:字串內未跳脫的英文雙引號(如 "No Soliciting")。
+   原理:走訪字串,遇到引號時看後面接什麼——接 , } ] : 才算真正的字串結尾,否則視為內文引號自動跳脫 */
+function repairJSON(t){
+  let out='',inStr=false;
+  for(let i=0;i<t.length;i++){
+    const c=t[i];
+    if(!inStr){if(c==='"')inStr=true;out+=c;continue}
+    if(c==='\\'){out+=c+(t[i+1]||'');i++;continue}
+    if(c==='"'){
+      const rest=t.slice(i+1),m=rest.match(/^\s*([,\}\]:])/);
+      if(m){
+        if(m[1]===','){
+          const after=rest.replace(/^\s*,\s*/,'');
+          if(/^["\{\[\}\]\d\-]/.test(after)||/^(true|false|null)/.test(after)){inStr=false;out+=c;continue}
+          out+='\\"';continue;
+        }
+        inStr=false;out+=c;continue;
+      }
+      out+='\\"';continue;
+    }
+    out+=c;
+  }
+  return out;
+}
+function parseEntries(t){
+  t=String(t).trim().replace(/^```json?/i,'').replace(/```\s*$/,'').trim();
+  try{const d=JSON.parse(t);return Array.isArray(d)?d:[d]}catch(e){}
+  /* 第一次解析失敗 → 自動修復:內文引號跳脫 + 移除多餘的尾逗號,再試一次 */
+  const r=repairJSON(t).replace(/,\s*([\}\]])/g,'$1');
+  const d=JSON.parse(r);return Array.isArray(d)?d:[d];
+}
+async function apiCall(prompt){
+  const url=`https://generativelanguage.googleapis.com/v1beta/models/${S.set.model}:generateContent?key=${encodeURIComponent(S.set.key)}`;
+  const res=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({contents:[{parts:[{text:prompt}]}]})});
+  if(!res.ok)throw new Error('API 回應 '+res.status+'(檢查 key 是否正確、設定裡的模型名稱是否為目前可用版本)');
+  const j=await res.json();
+  return parseEntries(j.candidates[0].content.parts[0].text);
+}
+async function apiLookup(words){return apiCall(buildPrompt(words))}
+/* 自動生成:讓模型自己挑 N 個字庫裡沒有的高頻字 */
+function buildGenPrompt(){
+  const lvl=$('genLvl')?$('genLvl').value:(S.set.genLvl||'B1');
+  return PROMPT_HEAD+'(自動生成模式)請自行挑選 10 個 CEFR '+lvl+' 等級、TOEIC 與日常對話都高頻實用的單字,輸出 JSON 陣列。'
+    +'絕對不要用以下我已有的單字:'+(Object.keys(S.words).join(', ')||'(目前字庫是空的,隨意挑)');
+}
+function copyGenPrompt(){copyText(buildGenPrompt(),'已複製生字 prompt!貼給 Gemini/Gem,把它回的 JSON 貼回「貼回結果」框匯入。')}
+async function apiGen(btn){
+  if(!S.set.key)return alert('尚未設定 API key(到「設定」填入),或改用「複製生字 prompt」模式');
+  btn.disabled=true;btn.textContent='生成中…';
+  try{
+    const list=(await apiCall(buildGenPrompt())).filter(x=>x&&x.word&&!S.words[x.word]);
+    if(!list.length)alert('這批生成的字都已在字庫裡,請再按一次');
+    else previewImport(list);
+  }catch(e){alert('生成失敗:'+e.message)}
+  renderQuery();
+}
+
+/* ---------- [4] 畫面層 ---------- */
+function cardBack(e){
+  let h=`<div class="big">${e.word} ${spk(e.word)}</div>
+  <div>${badge(e.level||'?')}${badge('TOEIC:'+(e.toeic_freq||'?'))}</div>
+  ${S.set.kk&&e.kk?`<div class="sub">[${e.kk}]</div>`:''}`;
+  if(e.etymology)h+=`<div class="sec">🌱 字根字源</div><div>${e.etymology}</div>`;
+  if(e.pos_forms&&e.pos_forms.length)h+=`<div class="sec">🔀 詞性變化</div>`+e.pos_forms.map(p=>`<div><b>${p.form}</b> <span class="sub">${p.type}</span> ${p.zh}</div>`).join('');
+  if(e.synonyms&&e.synonyms.length)h+=`<div class="sec">🤝 相似字</div>`+e.synonyms.map(s=>`<div><b>${s.word}</b>:${s.diff}</div>`).join('');
+  if(e.collocations&&e.collocations.length)h+=`<div class="sec">🧩 常用搭配</div><div>${e.collocations.join('、')}</div>`;
+  if(e.examples&&e.examples.length)h+=`<div class="sec">💬 例句</div>`+e.examples.map(x=>`<div style="margin-bottom:8px">${x.tag==='toeic'?badge('TOEIC'):badge('日常')} ${x.en} ${spk(x.en)}<div class="sub">${x.zh}</div></div>`).join('');
+  if(e.usage)h+=`<div class="sec">📌 用法</div><div>${e.usage}</div>`;
+  return h;
+}
+
+/* --- 今日 --- */
+function renderToday(){
+  const due=dueList().length,fresh=newList().length,
+    learning=Object.keys(S.srs).filter(w=>!S.srs[w].done).length,
+    mastered=Object.keys(S.srs).filter(w=>S.srs[w].done).length;
+  $('p-today').innerHTML=`
+  <div class="stat">
+    <div><b>${due}</b><span class="sub">待複習</span></div>
+    <div><b>${learning}</b><span class="sub">學習中</span></div>
+    <div><b>${fresh}</b><span class="sub">未開始</span></div>
+  </div>
+  <div class="card"><h2>今天的任務</h2>
+    ${due?`<button class="btn" onclick="go('review')">開始複習 ${due} 個到期單字</button>`:`<div class="sub">目前沒有到期的單字 🎉</div>`}
+    ${fresh?`<button class="btn ghost" onclick="startGroup();go('review')">學新的一組(${Math.min(S.set.group,fresh)} 字)</button>`:''}
+    ${mastered?`<div class="sub" style="margin-top:8px">✅ 已背起來 ${mastered} 字(到「字庫」可查看或恢復複習)</div>`:''}
+  </div>
+  <div class="card"><h2>使用方式</h2><div class="sub">每天打開,有到期的字就複習。按「記得」間隔拉長(10分→1時→半天→1天→2天→4天→7天→14天→30天→60天),「忘了」會退階重練,約 10 次後進入長期記憶。建議設手機鬧鐘每天固定時間打開。</div></div>`;
+}
+
+/* --- 複習 --- */
+let Q=[],qi=0,mode='flip',revealed=false,spellMark='';
+function startReview(m){mode=m;Q=shuffle(dueList());qi=0;revealed=false;spellMark='';renderReview()}
+function doRate(g){rate(Q[qi],g);spellMark='';revealed=false;qi++;renderReview()}
+function checkSpell(){
+  const v=($('spellIn').value||'').trim().toLowerCase();const w=Q[qi];
+  spellMark=v===w.toLowerCase()?'<span class="ok">✓ 拼對了</span>':`<span class="bad">✗ 你拼的:${attr(v)||'(空白)'}</span>`;
+  revealed=true;renderReview();
+}
+function renderReview(){
+  const due=dueList();
+  if(!Q.length||qi>=Q.length){
+    Q=[];qi=0;
+    $('p-review').innerHTML=`<div class="card"><h2>🎴 複習</h2>
+    ${due.length?`<div>有 <b>${due.length}</b> 個單字到期。選擇模式:</div>
+      <button class="btn" onclick="startReview('flip')">🎴 翻卡(看字回想意思)</button>
+      <button class="btn ghost" onclick="startReview('spell')">⌨️ 拼字(看中文提示拼單字)</button>
+      <button class="btn ghost" onclick="startReview('listen')">👂 聽力(聽發音辨義)</button>`
+    :`<div class="sub">沒有到期的單字。到「今日」開新的一組,或等下一批到期。</div>`}
+    </div>`;return;
+  }
+  const w=Q[qi],e=S.words[w],r=S.srs[w];
+  if(!revealed){
+    let front='';
+    if(mode==='flip')front=`${r.fresh?badge('✨ 新字'):''}<div class="big">${e.word} ${spk(e.word)}</div><button class="btn" onclick="revealed=true;renderReview()">翻開答案</button>`;
+    else if(mode==='spell')front=`<div class="sec">中文提示</div>${(e.pos_forms||[]).map(p=>`<div>${p.type} ${p.zh}</div>`).join('')}<div class="sec">字源提示</div><div class="sub">${e.etymology||'(無)'}</div><input type="text" id="spellIn" placeholder="拼出這個單字" autocomplete="off" autocapitalize="off"><button class="btn" onclick="checkSpell()">對答案</button>`;
+    else front=`<div class="big">👂 ${spk(e.word)}</div><div class="sub">聽發音,回想這個字的意思(按🔊可重聽)</div><button class="btn" onclick="revealed=true;renderReview()">翻開答案</button>`;
+    $('p-review').innerHTML=`<div class="sub" style="margin-bottom:6px">第 ${qi+1} / ${Q.length} 個</div><div class="card">${front}</div>`;
+    if(mode==='listen')speak(e.word);
+    if(mode==='spell'&&$('spellIn'))$('spellIn').focus();
+  }else{
+    $('p-review').innerHTML=`<div class="sub" style="margin-bottom:6px">第 ${qi+1} / ${Q.length} 個 ${spellMark}</div>
+    <div class="card">${cardBack(e)}</div>
+    <div class="rate">
+      <button class="btn b-again" onclick="doRate('again')">忘了<small>10 分鐘後再考</small></button>
+      <button class="btn b-hard" onclick="doRate('hard')">模糊<small>間隔減半</small></button>
+      <button class="btn b-good" onclick="doRate('good')">記得<small>${nextGap(w)}後</small></button>
+    </div>
+    <button class="btn ghost" onclick="masterWord(Q[qi]);spellMark='';revealed=false;qi++;renderReview()">✅ 這個字早就會了,移出每日複習</button>`;
+  }
+}
+
+/* --- 查單字 --- */
+function renderQuery(){
+  $('p-query').innerHTML=`
+  <div class="card"><h2>🔍 查單字(查了就入庫)</h2>
+    <input type="text" id="qWord" placeholder="輸入英文單字,多個用逗號分隔">
+    <button class="btn" onclick="apiQuery(this)">用 Gemini API 直接查並入庫</button>
+    <div class="sub" style="margin-top:4px">${S.set.key?'✓ 已設定 API key':'尚未設定 API key(到「設定」填入),或用下面的複製模式'}</div>
+    <button class="btn ghost" onclick="copyQueryPrompt()">📋 複製 prompt(貼給你的 Gemini / Gem)</button>
+  </div>
+  <div class="card"><h2>📥 貼回結果</h2>
+    <div class="sub">把 Gemini 回的 JSON 貼在這裡:</div>
+    <textarea id="pasteBox" placeholder='[{"word":"...", ...}]'></textarea>
+    <button class="btn" onclick="importPaste()">匯入</button>
+  </div>
+  <div class="card"><h2>✨ 自動擴充字庫</h2>
+    <div class="sub">讓 AI 自己挑 10 個你字庫裡沒有的高頻字(TOEIC+日常)。</div>
+    <label class="sub">等級</label>
+    <select id="genLvl" onchange="S.set.genLvl=this.value;save()">
+      ${LEVELS.map(l=>`<option value="${l}" ${(S.set.genLvl||'B1')===l?'selected':''}>${l}</option>`).join('')}
+    </select>
+    <button class="btn" onclick="apiGen(this)">✨ 用 API 直接生 10 個新字</button>
+    <button class="btn ghost" onclick="copyGenPrompt()">📋 複製生字 prompt(貼給 Gem)</button>
+  </div>
+  <div class="card"><h2>⏳ 待補完清單(${S.pending.length})</h2>
+    <div class="sub">把以前查過、想背的字貼進來(一行一個),再一鍵複製補完 prompt 丟給 Gemini。</div>
+    <textarea id="pendBox" placeholder="每行一個單字"></textarea>
+    <button class="btn ghost" onclick="addPending()">加入清單</button>
+    ${S.pending.length?`<div class="sub" style="margin-top:8px">${S.pending.map(attr).join('、')}</div>
+    <button class="btn" onclick="copyText(buildPrompt(S.pending))">📋 複製補完 prompt(${S.pending.length} 字)</button>
+    <button class="btn ghost" onclick="if(confirm('清空待補完清單?')){S.pending=[];save();renderQuery()}">清空清單</button>`:''}
+  </div>`;
+}
+function splitWords(raw){return raw.split(/[,，\n\s]+/).map(s=>s.trim()).filter(Boolean)}
+async function apiQuery(btn){
+  const raw=$('qWord').value.trim();if(!raw)return alert('請先輸入單字');
+  if(!S.set.key)return alert('尚未設定 API key。到「設定」頁填入(aistudio.google.com 免費申請),或改用「複製 prompt」模式。');
+  btn.disabled=true;btn.textContent='查詢中…';
+  try{previewImport(await apiLookup(splitWords(raw)))}
+  catch(e){alert('查詢失敗:'+e.message)}
+  renderQuery();
+}
+function copyQueryPrompt(){
+  const raw=$('qWord').value.trim();if(!raw)return alert('請先在上面輸入單字');
+  copyText(buildPrompt(splitWords(raw)));
+}
+function importPaste(){
+  try{previewImport(parseEntries($('pasteBox').value))}
+  catch(e){alert('JSON 解析失敗:'+e.message+'\n請確認貼的是完整 JSON(可包含 ```json 代碼框)')}
+}
+function addPending(){
+  splitWords($('pendBox').value).forEach(w=>{if(!S.pending.includes(w)&&!S.words[w])S.pending.push(w)});
+  save();renderQuery();
+}
+let _imp=[];
+function previewImport(list){
+  const ok=(list||[]).filter(x=>x&&x.word);
+  if(!ok.length)return alert('沒有讀到有效的單字資料,請確認格式');
+  _imp=ok;
+  openModal(`<h2>預覽匯入(${ok.length} 字)</h2>`+
+    ok.map(x=>`<div class="row" style="cursor:default"><b>${attr(x.word)}</b><span>${badge(x.level||'?')}<span class="sub">${(x.pos_forms&&x.pos_forms[0])?x.pos_forms[0].zh:''}</span></span></div>`).join('')+
+    `<button class="btn" onclick="confirmImport()">確認匯入</button><button class="btn ghost" onclick="closeModal()">取消</button>`);
+}
+function confirmImport(){
+  _imp.forEach(x=>{S.words[x.word]=x;S.pending=S.pending.filter(p=>p.toLowerCase()!==x.word.toLowerCase())});
+  save();closeModal();
+  alert('已匯入 '+_imp.length+' 個單字!到「字庫」查看,或到「今日」開始學。');
+  _imp=[];renderQuery();
+}
+
+/* --- 字庫 --- */
+let libQ='';
+function renderLib(){
+  const ws=Object.keys(S.words).sort();
+  const q=libQ.toLowerCase();
+  const rows=ws.filter(w=>!q||w.toLowerCase().includes(q)||JSON.stringify(S.words[w]).toLowerCase().includes(q))
+    .map(w=>{const e=S.words[w],r=S.srs[w];
+      return `<div class="row" onclick="openWord('${w}')"><div><b>${w}</b> <span class="sub">${(e.pos_forms&&e.pos_forms[0])?e.pos_forms[0].zh:''}</span></div>
+      <div>${badge(e.level||'?')}${r?(r.done?badge('✅ 已會'):badge('第 '+(r.stage+1)+' 階')):badge('未開始')}</div></div>`}).join('');
+  $('p-lib').innerHTML=`<div class="card"><h2>🗂️ 字庫(共 ${ws.length} 字)</h2>
+  <input type="text" placeholder="搜尋單字或中文" value="${attr(libQ)}" oninput="libQ=this.value;renderLib()">
+  ${rows||'<div class="sub" style="margin-top:8px">沒有符合的單字</div>'}</div>`;
+}
+function openWord(w){
+  const e=S.words[w];if(!e)return;
+  const r=S.srs[w];
+  openModal(cardBack(e)+
+    (!r?`<button class="btn" onclick="S.srs['${w}']={stage:0,due:Date.now(),lapses:0,fresh:true};save();closeModal();renderLib()">加入複習排程</button>`
+      :(r.done
+        ?`<button class="btn" onclick="unmasterWord('${w}');closeModal();renderLib()">↩️ 恢復每日複習</button>`
+        :`<button class="btn ghost" onclick="masterWord('${w}');closeModal();renderLib()">✅ 標為已背起來(移出每日複習)</button>`))+
+    `<button class="btn ghost" onclick="if(confirm('刪除 ${w}?卡片會完全消失,無法復原')){delete S.words['${w}'];delete S.srs['${w}'];save();closeModal();renderLib()}">🗑️ 刪除這個字</button>`);
+}
+
+/* --- 設定 --- */
+function renderSet(){
+  $('p-set').innerHTML=`
+  <div class="card"><h2>⚙️ 設定</h2>
+    <label class="sub">Gemini API key(選填。aistudio.google.com 免費申請,填了就能在 App 內直接查單字)</label>
+    <input type="password" value="${attr(S.set.key)}" onchange="S.set.key=this.value.trim();save();renderSet()">
+    <label class="sub">模型名稱(API 查詢失敗時,到 AI Studio 查目前可用的名稱後改這裡)</label>
+    <input type="text" value="${attr(S.set.model)}" onchange="S.set.model=this.value.trim();save()">
+    <label class="sub">每組新字數量</label>
+    <input type="number" value="${S.set.group}" min="3" max="30" onchange="S.set.group=parseInt(this.value)||10;save()">
+    <label class="sub">要學哪些等級的新字(沒勾的不會排入新字組,已在學的不受影響)</label>
+    <div style="margin-top:6px">${LEVELS.map(l=>`<label style="margin-right:12px;white-space:nowrap"><input type="checkbox" ${S.set.levels.includes(l)?'checked':''} onchange="toggleLvl('${l}',this.checked)"> ${l}</label>`).join('')}</div>
+    <label class="sub"><input type="checkbox" ${S.set.kk?'checked':''} onchange="S.set.kk=this.checked;save()"> 單字卡顯示 KK 音標</label>
+  </div>
+  <div class="card"><h2>☁️ 雲端字庫(GitHub)</h2>
+    <div class="sub">單字庫存在 GitHub repo 的 words.json,所有裝置共用;複習進度仍各自存在裝置上。
+    加了新單字 → 按「上傳」;換一台裝置 → 按「從雲端更新」。</div>
+    <button class="btn" onclick="pushCloudWords()">⬆️ 上傳字庫到 GitHub(一鍵 commit)</button>
+    <button class="btn" onclick="pullCloudWords()">⬇️ 從雲端更新字庫</button>
+    <button class="btn ghost" onclick="copyWordsJSON()">📋 複製字庫 JSON(不想用 token 時手動貼)</button>
+    <label class="sub">repo(格式:帳號/repo名,例:renfu/vocab-app)</label>
+    <input type="text" value="${attr(S.set.ghRepo)}" onchange="S.set.ghRepo=this.value.trim();save()">
+    <label class="sub">GitHub token(Settings → Developer settings → Fine-grained tokens;只勾這個 repo、Contents 給 Read and write。只存在這台裝置的瀏覽器裡)</label>
+    <input type="password" value="${attr(S.set.ghToken)}" onchange="S.set.ghToken=this.value.trim();save()">
+  </div>
+  <div class="card"><h2>💾 備份與還原</h2>
+    <button class="btn ghost" onclick="exportAll()">匯出全部資料(下載 JSON 檔)</button>
+    <label class="sub">還原:把匯出的 JSON 內容貼進來</label>
+    <textarea id="restoreBox"></textarea>
+    <button class="btn ghost" onclick="restoreAll()">還原備份</button>
+    <button class="btn" style="background:var(--bad)" onclick="if(confirm('確定清除全部資料?此動作無法復原!')){localStorage.removeItem('vocabV1');location.reload()}">全部重置</button>
+  </div>`;
+}
+function exportAll(){
+  const blob=new Blob([JSON.stringify(S,null,1)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='vocab-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();
+}
+function restoreAll(){
+  try{const d=JSON.parse($('restoreBox').value);
+    if(!d.words)throw new Error('格式不符');
+    S=d;S.set=Object.assign({key:'',model:'gemini-2.5-flash',kk:false,group:10,levels:[...LEVELS],ghRepo:'',ghToken:''},S.set||{});
+    save();alert('還原完成');location.reload();
+  }catch(e){alert('還原失敗:'+e.message)}
+}
+
+/* --- 共用:modal 與頁籤 --- */
+function openModal(h){$('modalBox').innerHTML=h;$('modal').classList.add('on')}
+function closeModal(){$('modal').classList.remove('on')}
+const PAGES={today:renderToday,review:renderReview,query:renderQuery,lib:renderLib,set:renderSet};
+function go(p){
+  document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.p===p));
+  ['today','review','query','lib','set'].forEach(x=>$('p-'+x).classList.toggle('hid',x!==p));
+  PAGES[p]();
+}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>go(b.dataset.p));
+go('today');
+
+/* PWA:只在 https/localhost 下註冊(直接開檔案時自動略過) */
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
