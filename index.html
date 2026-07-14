@@ -470,7 +470,11 @@ function exportAll(){
 function restoreAll(){
   try{const d=JSON.parse($('restoreBox').value);
     if(!d.words)throw new Error('格式不符');
+    const cur=S.set; /* 保留這台裝置已填的金鑰:備份裡沒有的話不要清空 */
     S=d;S.set=Object.assign({key:'',model:'gemini-2.5-flash',kk:false,group:10,levels:[...LEVELS],ghRepo:'',ghToken:''},S.set||{});
+    if(!S.set.ghToken&&cur.ghToken)S.set.ghToken=cur.ghToken;
+    if(!S.set.ghRepo&&cur.ghRepo)S.set.ghRepo=cur.ghRepo;
+    if(!S.set.key&&cur.key)S.set.key=cur.key;
     save();alert('還原完成');location.reload();
   }catch(e){alert('還原失敗:'+e.message)}
 }

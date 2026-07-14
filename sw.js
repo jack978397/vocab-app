@@ -1,5 +1,5 @@
 /* Service Worker:離線快取(PWA 必備)。改版時把 CACHE 版本號 +1 即可強制更新 */
-const CACHE = 'vocab-v1';
+const CACHE = 'vocab-v2';
 const FILES = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
