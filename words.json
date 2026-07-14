@@ -952,5 +952,3379 @@
    }
   ],
   "usage": "一字雙義(升官/促銷)都是 TOEIC 核心考點;promotion 同樣雙義,靠上下文判斷。"
+ },
+ {
+  "word": "elaborated",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[ɪ`læbə͵retɪd]",
+  "etymology": "e- (out, 出) + labor (work, 勞動、工作) + -ated (動詞/形容詞字尾) → 耗費勞力做出來的 → 精心製作的、詳盡的",
+  "pos_forms": [
+   {
+    "form": "elaborate",
+    "type": "v.",
+    "zh": "詳盡闡述、精心製作"
+   },
+   {
+    "form": "elaborated",
+    "type": "adj.",
+    "zh": "詳盡的、精心規劃的"
+   },
+   {
+    "form": "elaboration",
+    "type": "n.",
+    "zh": "詳細闡述、細節"
+   }
+  ],
+  "collocations": [
+   "highly elaborated",
+   "elaborated plan",
+   "elaborated system"
+  ],
+  "synonyms": [
+   {
+    "word": "detailed",
+    "diff": "最通用的「詳細」，單純指包含很多細節，不一定像 elaborated 強調投入大量心血或結構複雜。"
+   },
+   {
+    "word": "sophisticated",
+    "diff": "側重於結構「複雜、精密」或技術高超，而 elaborated 更強調細節被「刻意擴展、豐富」的過程。"
+   },
+   {
+    "word": "complicated",
+    "diff": "通常帶有負面意涵，指事情錯綜複雜、令人困惑；elaborated 則是正面形容細節完整、條理分明。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The marketing team presented an elaborated proposal for the upcoming product launch.",
+    "zh": "行銷團隊為即將到來的產品發表會提出了一份非常詳盡的企劃案。",
+    "tag": "toeic"
+   },
+   {
+    "en": "She gave me a pretty elaborated excuse for why she was late, but I'm not sure I buy it.",
+    "zh": "她對自己遲到給了個聽起來精心編造的藉口，但我不太相信。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "elaborated 做形容詞時，通常用來形容計畫、系統或理論「經過深思熟慮且細節極為完整」。它和 detailed 的差別在於，elaborated 帶有一種「刻意加工、讓它變得更完美或更複雜」的動態感，所以在商業簡報中，用這個字會比單純的 detailed 顯得更有專業度和厚重感。"
+ },
+ {
+  "word": "stipulated",
+  "level": "C1",
+  "toeic_freq": "high",
+  "kk": "[`stɪpjə͵letɪd]",
+  "etymology": "stipulate (規定、約定) + -ed (形容詞/過去分詞字尾) → 經明文規定的",
+  "pos_forms": [
+   {
+    "form": "stipulate",
+    "type": "v.",
+    "zh": "規定、約定"
+   },
+   {
+    "form": "stipulated",
+    "type": "adj.",
+    "zh": "說定的、明文規定的"
+   },
+   {
+    "form": "stipulation",
+    "type": "n.",
+    "zh": "規定、條款"
+   }
+  ],
+  "collocations": [
+   "stipulated price",
+   "stipulated time",
+   "unless otherwise stipulated"
+  ],
+  "synonyms": [
+   {
+    "word": "specified",
+    "diff": "單純指「明確指定的」，可以用在任何細節、顏色或數量上；stipulated 則專指「在合約、合約或法律中明文規定的義務」。"
+   },
+   {
+    "word": "required",
+    "diff": "指「必須的、需要的」，通常是規定或環境下的硬性要求，但不一定像 stipulated 那樣特指合約條款中的明文條文。"
+   },
+   {
+    "word": "prescribed",
+    "diff": "側重於「由官方或權威機構規定的（如法規、醫生處方）」，而 stipulated 更多用於雙方協議或商務合同的條件。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The contractor failed to complete the building renovation within the stipulated timeframe.",
+    "zh": "承包商未能商定的時間內完成建築翻修工程。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We need to pay the rent by the fifth of every month, as stipulated in our lease.",
+    "zh": "正如我們租約裡規定的，我們每個月五號前要交房租。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "stipulated 通常出現在商務合約、法律文件或正式協議中，用來形容某個條件、價格或期限是「雙方講好並寫在字據上的」。在日常生活中比較少用，但如果是談到租屋合約（lease）或工作合約（contract）的規定時，這個字就會非常實用且精準。"
+ },
+ {
+  "word": "solicit",
+  "level": "C1",
+  "toeic_freq": "high",
+  "kk": "/səˈlɪs.ɪt/",
+  "etymology": "sollicitus(焦慮的、完全搖晃的) → sollus(整個) + citus(移動、激起) → 試圖搖動、引起注意 → 懇求、徵求",
+  "pos_forms": [
+   {
+    "form": "solicit",
+    "type": "v.",
+    "zh": "懇求、徵求、請求"
+   },
+   {
+    "form": "solicitation",
+    "type": "n.",
+    "zh": "懇求、徵求、拉客"
+   },
+   {
+    "form": "solicitor",
+    "type": "n.",
+    "zh": "初級律師、募款人"
+   }
+  ],
+  "collocations": [
+   "solicit feedback",
+   "solicit donations",
+   "solicit advice"
+  ],
+  "synonyms": [
+   {
+    "word": "request",
+    "diff": "最為中性且常用，單純表達『請求』或『要求』，而 solicit 帶有更主動、廣泛去『募集、爭取』某物的色彩。"
+   },
+   {
+    "word": "seek",
+    "diff": "側重於『尋找』或『謀求』抽象的目標（如尋求幫助），而 solicit 則通常指透過向他人開口或公開呼籲來『獲取』。"
+   },
+   {
+    "word": "petition",
+    "diff": "通常指正式、集體的『請願』或向官方遞交請願書，程序上比 solicit 更為正式且具備法律或政治意涵。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The marketing department is planning to solicit feedback from clients to improve our new software.",
+    "zh": "行銷部門正計劃向客戶徵求反饋，以改善我們的新軟體。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I'm just calling to solicit your advice on how to handle this situation with our neighbor.",
+    "zh": "我打電話只是想請教你，該怎麼處理跟鄰居之間的這個狀況。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "常用於正式商務或法律情境中，表示主動向他人「徵求」意見、資金、支持或贊助。在日常對話中頻率較低，且要注意在特定街頭情境下，它有「拉客、賣淫」的負面含意，因此使用時需注意語境。"
+ },
+ {
+  "word": "resurfaced",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "/ˌriːˈsɝː.fɪst/",
+  "etymology": "re-(再次) + surface(浮出表面/水面) → 重新浮出水面 → 再次出現、重新浮現",
+  "pos_forms": [
+   {
+    "form": "resurface",
+    "type": "v.",
+    "zh": "重新浮現、再次出現、重新鋪路面"
+   },
+   {
+    "form": "resurfaced",
+    "type": "adj.",
+    "zh": "重新浮現的、重新鋪好路面的"
+   }
+  ],
+  "collocations": [
+   "old issues resurfaced",
+   "resurfaced in the media",
+   "resurfaced road"
+  ],
+  "synonyms": [
+   {
+    "word": "reappear",
+    "diff": "最單純的『再次出現』，適用於人或物品實體上的再現；而 resurfaced 常形容隱藏、平息一段時間後又『重新浮上檯面』的問題或傳言。"
+   },
+   {
+    "word": "emerge",
+    "diff": "側重於『從某處顯露、浮現』，可以是第一次出現；resurfaced 則必定強調過去曾存在、沉寂過後『再度』冒出來。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Rumors about the company's potential merger resurfaced after the CEO's sudden meeting with investors.",
+    "zh": "在執行長突然與投資人會面後，關於公司可能合併的傳言再度浮上檯面。",
+    "tag": "toeic"
+   },
+   {
+    "en": "My missing keys finally resurfaced under the couch cushions when I was cleaning up.",
+    "zh": "我打掃的時候，那串弄丟的鑰匙終於在沙發墊下面現身了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "常由動詞 resurface 過去式延伸而來。主要用於形容原本已經平息、被遺忘或隱藏的事情（如問題、謠言、記憶）『重新浮出檯面』。在商務情境中，很常用來討論過去未解決、最近又重新被提起的工作議題。"
+ },
+ {
+  "word": "shabby",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "/ˈʃæb.i/",
+  "etymology": "源自 scabby(長疥癬的、骯髒的) → 演變為形容衣服或物品破舊、磨損的 → 破爛的、寒酸的",
+  "pos_forms": [
+   {
+    "form": "shabby",
+    "type": "adj.",
+    "zh": "破舊的、寒酸的、卑鄙的"
+   },
+   {
+    "form": "shabbily",
+    "type": "adv.",
+    "zh": "破舊地、寒酸地、卑劣地"
+   },
+   {
+    "form": "shabbiness",
+    "type": "n.",
+    "zh": "破舊、寒酸、卑劣"
+   }
+  ],
+  "collocations": [
+   "shabby clothes",
+   "shabby hotel",
+   "not shabby"
+  ],
+  "synonyms": [
+   {
+    "word": "worn-out",
+    "diff": "側重於物品因為過度使用而『磨損、消耗殆盡』，而 shabby 除了破舊外，還常帶有一種外表看起來『寒酸、不體面』的視覺感。"
+   },
+   {
+    "word": "run-down",
+    "diff": "通常用來形容建築物、地區或設施因缺乏維護而『荒廢、破舊』，shabby 則更常用於衣服、家具等個人物品，或形容整體外觀。"
+   },
+   {
+    "word": "mean",
+    "diff": "在形容行為時，mean 是指刻薄、壞心；而 shabby 形容行為時，側重於『卑鄙、不厚道、不體面』，例如 shabby treatment。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The office furniture looks a bit shabby, so the management decided to budget for some upgrades next quarter.",
+    "zh": "辦公室家具看起來有點破舊了，因此管理階層決定編列預算，在下個季度進行一些升級。",
+    "tag": "toeic"
+   },
+   {
+    "en": "He was wearing a shabby old jacket, but his shoes were surprisingly clean and polished.",
+    "zh": "他穿著一件破舊的老夾克，但他的鞋子卻出奇地乾淨且擦得發亮。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "主要用來形容衣物、建築或家具因使用很久而顯得『破爛、寒酸』。在口語中，口語片語 'not too shabby' 常用來表示『還不賴、挺不錯的』。此外，它也可以用來形容人的行為『不厚道、卑鄙』。"
+ },
+ {
+  "word": "sinks",
+  "level": "A2",
+  "toeic_freq": "medium",
+  "kk": "/sɪŋks/",
+  "etymology": "源自古英語 sincan(下沉) → 作動詞指『下沉、沉沒』；作名詞指『水槽』(水往下流匯集之處)。此處為單數名詞複數形或第三人稱單數動詞",
+  "pos_forms": [
+   {
+    "form": "sink",
+    "type": "n.",
+    "zh": "水槽、洗手台"
+   },
+   {
+    "form": "sink",
+    "type": "v.",
+    "zh": "下沉、沉沒、減少、陷入"
+   },
+   {
+    "form": "sunken",
+    "type": "adj.",
+    "zh": "沉沒的、凹陷的"
+   }
+  ],
+  "collocations": [
+   "kitchen sink",
+   "clogged sink",
+   "heart sinks"
+  ],
+  "synonyms": [
+   {
+    "word": "basin",
+    "diff": "通常指專門用來洗手、洗臉的『洗手盆』(如浴室洗手台)，而 sink 的範圍更廣，尤其常用於廚房洗碗盤的水槽。"
+   },
+   {
+    "word": "submerge",
+    "diff": "作動詞時，submerge 側重於刻意或完全『浸入、沒入水面下』，而 sink 則指物體因自身重量而自然『下沉』。"
+   },
+   {
+    "word": "drop",
+    "diff": "作動詞時，drop 指距離或數值迅速『下降、掉落』，而 sink 的下降過程通常更為『緩慢、逐漸下沉』。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The maintenance team needs to clear the clogged sinks in the office restroom before the clients arrive.",
+    "zh": "維修團隊需要在客戶到達之前，清乾淨辦公室洗手間裡堵塞的洗手台。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Every time I look at the dirty dishes piling up in the kitchen sinks, my heart just sinks.",
+    "zh": "每次看到廚房水槽裡堆積如山的髒碗盤，我的心就沉了下去。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "名詞指廚房或浴室的『水槽』，在商業或多益情境中常出現在辦公室設施維修、飯店設備維護的對話中。作動詞時指『下沉』，口語常延伸出心情、股價或氣溫『低落、下跌』的用法。"
+ },
+ {
+  "word": "setbacks",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/ˈset.bæks/",
+  "etymology": "set(放置、設定) + back(向後) → 被往後推、推遲 → 挫折、阻礙。此處為複數名詞形",
+  "pos_forms": [
+   {
+    "form": "setback",
+    "type": "n.",
+    "zh": "挫折、障礙、倒退"
+   },
+   {
+    "form": "set back",
+    "type": "v.",
+    "zh": "耽誤、使延遲、花費"
+   }
+  ],
+  "collocations": [
+   "suffer setbacks",
+   "minor setbacks",
+   "overcome setbacks"
+  ],
+  "synonyms": [
+   {
+    "word": "obstacles",
+    "diff": "側重於前進道路上實體或抽象的『障礙物』，需要被跨越或移除；而 setbacks 則強調原本進展順利，卻突然遭到『倒退或耽誤』的事件。"
+   },
+   {
+    "word": "failures",
+    "diff": "指徹底的『失敗』或未達到目標的結果；setbacks 只是過程中的『小挫折、暫時性的停滯』，通常還有挽回的餘地。"
+   },
+   {
+    "word": "difficulties",
+    "diff": "最廣義的『困難』，指做某事時感到費勁；setbacks 則更具體指那些讓進度『倒退』的特定突發事件。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Despite a few technical setbacks during the testing phase, the team managed to launch the app on schedule.",
+    "zh": "儘管在測試階段遇到了幾次技術上的挫折，團隊還是成功按時推出了這款應用程式。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Don't let these minor setbacks discourage you; we can always adjust the itinerary and keep going.",
+    "zh": "別被這些小挫折打擊了，我們隨時可以調整行程然後繼續前進。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容在計畫、事業或個人進展中，突然發生的『耽誤』或『倒退』。在多益考試中，常與 suffer 或 experience 連用，用來描述專案開發、預算執行或供應鏈遇到的卡關問題。"
+ },
+ {
+  "word": "arbitrary",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "/ˈɑːr.bə.trer.i/",
+  "etymology": "源自拉丁語 arbiter(仲裁者、裁判) → 由個人主觀裁判決定、而非依循客觀法律或規則的 → 任意的、隨機的、獨斷的",
+  "pos_forms": [
+   {
+    "form": "arbitrary",
+    "type": "adj.",
+    "zh": "任意的、隨機的、獨斷的"
+   },
+   {
+    "form": "arbitrarily",
+    "type": "adv.",
+    "zh": "任意地、武斷地"
+   },
+   {
+    "form": "arbitrariness",
+    "type": "n.",
+    "zh": "任意性、武斷"
+   }
+  ],
+  "collocations": [
+   "arbitrary decision",
+   "arbitrary choice",
+   "completely arbitrary"
+  ],
+  "synonyms": [
+   {
+    "word": "random",
+    "diff": "強調完全缺乏特定規律或目的的『隨機』，多用於機率或數據抽樣；而 arbitrary 則常帶有『由個人主觀意志、甚至有些任性獨斷』來做決定的色彩。"
+   },
+   {
+    "word": "discretionary",
+    "diff": "指依法或依職權賦予的『自由裁量的』，通常是正向且合法的權力；而 arbitrary 往往指沒有正當理由或依據的『任意、武斷』。"
+   },
+   {
+    "word": "dogmatic",
+    "diff": "側重於態度上的『教條主義的、武斷自大的』，強迫他人接受其信仰或觀點；arbitrary 則純粹指決定或規則本身缺乏客觀依據。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The manager's selection of the project leader seemed completely arbitrary, as no clear criteria were provided to the team.",
+    "zh": "經理對專案負責人的挑選看起來完全是隨意的，因為沒有向團隊提供明確的評選標準。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We just picked an arbitrary date in October for the family reunion, hoping most people could make it.",
+    "zh": "我們只是隨便選了十月的某一天來舉辦家庭聚會，希望大多數人都能來得成。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容某個決定、規則或選擇是缺乏明確客觀理由、純憑主觀好惡或隨機定奪的。在商務情境中，若形容公司的政策或處罰是 'arbitrary'，往往帶有不公平、缺乏制度的負面批判意味。日常口語中則常單純表示『隨性、沒有特別原因』的選擇。"
+ },
+ {
+  "word": "interference",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/ˌɪn.t̬ɚˈfɪr.əns/",
+  "etymology": "inter-(在...之間) + ferire(打擊、碰撞) → 在兩者之間互相碰撞打擊 → 干涉、干擾",
+  "pos_forms": [
+   {
+    "form": "interfere",
+    "type": "v.",
+    "zh": "干涉、干擾"
+   },
+   {
+    "form": "interference",
+    "type": "n.",
+    "zh": "干涉、干擾、訊號阻礙"
+   }
+  ],
+  "collocations": [
+   "government interference",
+   "signal interference",
+   "without interference"
+  ],
+  "synonyms": [
+   {
+    "word": "intervention",
+    "diff": "通常指『正當或有刻意目的』的介入調停，常帶有試圖解決問題的正向色彩；而 interference 多指『令人厭惡、不受到歡迎』的瞎攪和或阻礙。"
+   },
+   {
+    "word": "disturbance",
+    "diff": "側重於原本平靜、有序的狀態突然被『打擾、驚動或破壞』；interference 則更強調外來力量硬要插手、介入或造成物理上的訊號重疊。"
+   },
+   {
+    "word": "obstruction",
+    "diff": "指具體或抽象的『阻礙物、妨礙行為』，通常是直接切斷、擋住去路；interference 則是透過干擾來讓過程變得不順利。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our IT department is investigating the wireless network interference that occurred in the conference room this morning.",
+    "zh": "我們的資訊部門正在調查今天早上在會議室發生的無線網路干擾問題。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I wish my parents would let me make my own career choices without so much interference.",
+    "zh": "我希望我爸媽能讓我自己做職涯選擇，不要有這麼多干涉。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "常指妨礙某事順利進行的外來影響，既可以用於抽象的『人事干涉、插手』，也可以用於物理和科技上的『訊號、波形干擾』。在多益考試中，很常出現在科技製造、通訊設備故障或政府政策介入市場的探討中。要注意後面常搭配介係詞 'with'（對某事的干擾）或 'in'（對某人私事的干涉）。"
+ },
+ {
+  "word": "counteract",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "/ˌkaʊn.t̬ɚˈækt/",
+  "etymology": "counter-(相反、對抗) + act(行動、起作用) → 產生相反的作用以對抗 → 抵消、對抗",
+  "pos_forms": [
+   {
+    "form": "counteract",
+    "type": "v.",
+    "zh": "抵消、對抗、中和"
+   },
+   {
+    "form": "counteraction",
+    "type": "n.",
+    "zh": "反作用、對抗行為"
+   },
+   {
+    "form": "counteractive",
+    "type": "adj.",
+    "zh": "反作用的、抵抗的"
+   }
+  ],
+  "collocations": [
+   "counteract the effects",
+   "counteract the inflation",
+   "counteract the negative impacts"
+  ],
+  "synonyms": [
+   {
+    "word": "offset",
+    "diff": "側重於在數量、金額或利益上透過另一方來『平帳、彌補、抵消』，而 counteract 更強調主動採取行動去『減弱或阻止』某種負面力量。"
+   },
+   {
+    "word": "neutralize",
+    "diff": "源自化學上的『中和』，形容使某種威脅、毒性或勢力完全『失去效力、變為中性』；counteract 則是產生對抗作用，不一定能完全消除。"
+   },
+   {
+    "word": "resist",
+    "diff": "指『抵抗、反抗』某種外力或誘惑，身體或心理上保持不動搖；counteract 則是必須採取『反向的行動』來產生抗衡效果。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The central bank decided to raise interest rates to counteract the effects of rapid economic inflation.",
+    "zh": "中央銀行決定提高利率，以抵消快速經濟通貨膨脹所帶來的影響。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Drinking a glass of water after coffee can help counteract the dehydration it causes.",
+    "zh": "喝完咖啡後喝一杯水，有助於緩解咖啡所帶來的脫水現象。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用於主動採取某種措施，去『減輕、抵消』另一個已經存在且有害的影響或力量。在多益中常出現在企業策略、市場變動或健康醫學的文本中。常見的搭配詞是 counteract the effects of something。"
+ },
+ {
+  "word": "aligned",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/əˈlaɪnd/",
+  "etymology": "a-(朝向) + line(線) → 排成一條線 → 對齊的、理念一致的",
+  "pos_forms": [
+   {
+    "form": "align",
+    "type": "v.",
+    "zh": "使對齊、使一致、校準"
+   },
+   {
+    "form": "aligned",
+    "type": "adj.",
+    "zh": "對齊的、一致的、結盟的"
+   },
+   {
+    "form": "alignment",
+    "type": "n.",
+    "zh": "排成直線、聯盟、一致"
+   }
+  ],
+  "collocations": [
+   "perfectly aligned",
+   "strategically aligned",
+   "aligned with"
+  ],
+  "synonyms": [
+   {
+    "word": "consistent",
+    "diff": "側重於前後『連貫、始終如一』，沒有矛盾；而 aligned 強調的是多個個體或目標朝向同一個方向，達到『步調或理念上的一致』。"
+   },
+   {
+    "word": "matched",
+    "diff": "指在外觀、功能或規格上『相配、符合』；aligned 則多用於抽象的目標、利益或戰略方向上的契合。"
+   },
+   {
+    "word": "affiliated",
+    "diff": "指組織結構上的『隸屬、加入』或結盟關係；aligned 則更偏向思想、立場或利益上的共同前進。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our marketing strategies must be fully aligned with the sales department's quarterly goals to maximize revenue.",
+    "zh": "我們的行銷策略必須與銷售部門的季度目標完全保持一致，以實現收入最大化。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I'm glad to see that our values are aligned on how we should raise our children.",
+    "zh": "很高興看到我們在教養小孩的價值觀上是一致的。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常由動詞 align 過去分詞延伸而來。常用於商務情境中，形容團隊、政策、利益或專案目標與大方向『保持一致、校準』。在日常生活中，也可以形容輪胎或骨骼的『對齊』，或是人與人之間觀念的契合。常用搭配為 be aligned with。"
+ },
+ {
+  "word": "reimbursement",
+  "level": "C1",
+  "toeic_freq": "high",
+  "kk": "/ˌriː.ɪmˈbɝːs.mənt/",
+  "etymology": "re-(重新) + im-(進去、投入) + purse(錢包) + -ment(名詞字尾) → 把錢重新放回錢包裡 → 核銷、退款、代墊款返還",
+  "pos_forms": [
+   {
+    "form": "reimburse",
+    "type": "v.",
+    "zh": "核銷、償還、付還"
+   },
+   {
+    "form": "reimbursement",
+    "type": "n.",
+    "zh": "費用核銷、退款、報帳"
+   }
+  ],
+  "collocations": [
+   "travel reimbursement",
+   "seek reimbursement",
+   "reimbursement form"
+  ],
+  "synonyms": [
+   {
+    "word": "refund",
+    "diff": "通常指購物後因為對商品不滿意、退貨或多付錢，商家退還給消費者的『退款』；而 reimbursement 專指你幫公司或他人先代墊了費用，事後拿收據去『核銷、拿回代墊款』。"
+   },
+   {
+    "word": "compensation",
+    "diff": "側重於因為遭受損失、傷害或加班工作而獲得的『補償、賠償金』或報酬，跟 reimbursement 這種實報實銷的代墊款不同。"
+   },
+   {
+    "word": "repayment",
+    "diff": "泛指任何債務、貸款的『償還、還款』，不限定於工作上的費用核銷。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Please submit all your travel receipts alongside the completed form to finance by Friday to process your reimbursement.",
+    "zh": "請在週五前將所有差旅收據連同填寫好的表格一併提交給財務部，以辦理您的費用核銷。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I paid for the team lunch with my personal credit card, so I need to ask HR about the reimbursement process.",
+    "zh": "我用私人的信用卡付了團隊聚餐的錢，所以我得問一下人資關於代墊款核銷的流程。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "非常高頻的多益商務單字，幾乎百分之百用於辦公室情境中的『報帳、核銷代墊款』，特別是差旅費、客戶應酬費或公務開銷。常用於 'seek reimbursement for something'（就某支出尋求核銷）這個結構。特別注意它不是一般商店的購物退款。"
+ },
+ {
+  "word": "resist",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/rɪˈzɪst/",
+  "etymology": "re-(反對、對抗) + sistere(站立) → 站著對抗 → 抵抗、抗拒",
+  "pos_forms": [
+   {
+    "form": "resist",
+    "type": "v.",
+    "zh": "抵抗、抗拒、耐得住"
+   },
+   {
+    "form": "resistance",
+    "type": "n.",
+    "zh": "抵抗、反抗、阻力"
+   },
+   {
+    "form": "resistant",
+    "type": "adj.",
+    "zh": "有抵抗力的、抗拒的"
+   }
+  ],
+  "collocations": [
+   "resist the temptation",
+   "resist changes",
+   "water-resistant"
+  ],
+  "synonyms": [
+   {
+    "word": "oppose",
+    "diff": "側重於對某項政策、提議或觀點表達『反對』的立場與態度；而 resist 則更強調受到外力時的『身體或心理上的抗拒與防禦』。"
+   },
+   {
+    "word": "withstand",
+    "diff": "通常形容承受住巨大的壓力、打擊或惡劣環境而『經受得住、頂得住』，通常不帶有主動反擊的意味。"
+   },
+   {
+    "word": "counteract",
+    "diff": "指採取『反向的行動』來產生抗衡效果以抵消某種負面力量，而 resist 可以純粹是保持不動搖、拒絕接受。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Many long-term employees tend to resist new technological changes when the company introduces automation tools.",
+    "zh": "當公司引進自動化工具時，許多資深員工往往會抗拒新的技術變革。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I'm trying to lose weight, but it is so hard to resist the temptation of late-night snacks.",
+    "zh": "我正試著減肥，但要抗拒宵夜的誘惑實在太難了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容拒絕接受某種改變、引誘或外在力量。動詞後面如果要接動作，必須搭配動名詞 V-ing，例如 'can't resist buying something'。在商務情境中，常用來討論員工對組織轉型的抗拒，或產品具備『耐磨、防水』等物理特性。"
+ },
+ {
+  "word": "collage",
+  "level": "B1",
+  "toeic_freq": "low",
+  "kk": "/kəˈlɑːʒ/",
+  "etymology": "源自法語 coller(粘貼) + -age(名詞字尾) → 粘貼出來的藝術品 → 拼貼畫",
+  "pos_forms": [
+   {
+    "form": "collage",
+    "type": "n.",
+    "zh": "拼貼畫、大雜燴、(綜合)收藏"
+   },
+   {
+    "form": "collagist",
+    "type": "n.",
+    "zh": "拼貼藝術家"
+   }
+  ],
+  "collocations": [
+   "make a collage",
+   "photo collage",
+   "a collage of"
+  ],
+  "synonyms": [
+   {
+    "word": "montage",
+    "diff": "montage 側重於透過『剪輯、組合』不同影像、聲音或照片來創造新的整體，常涉及動態影像或抽象概念的疊加；collage 則較指將實體材料（如紙張、布料、照片）『粘貼』在平面上。"
+   },
+   {
+    "word": "mosaic",
+    "diff": "mosaic 通常由許多『細小、幾何形狀的碎塊』（如玻璃、磁磚、寶石）緊密鑲嵌而成，排列出特定的圖案；collage 則是使用完整的素材片段（如剪報、整張照片）粘貼。"
+   },
+   {
+    "word": "medley",
+    "diff": "medley 指的是一組『歌曲或音樂片段的連續演奏』，有時也用於指食物或雜物的混合；collage 可用於抽象指不同事物或風格的混合，但不指音樂形式。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our marketing team created a visual collage to brainstorm themes for the new advertising campaign.",
+    "zh": "我們的行銷團隊製作了一個視覺拼貼畫，以集思廣益新廣告活動的主題。",
+    "tag": "toeic"
+   },
+   {
+    "en": "At the family reunion, we spent hours putting together a grand photo collage of all the past gatherings.",
+    "zh": "在家庭聚會上，我們花了好幾個小時把所有過去聚會的照片拼貼成一張大拼貼。 ",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來指將紙張、照片、布料等不同材料粘貼在平面上而成的藝術形式，也常指由許多不同部分拼湊而成的複雜整體。口語上，'photo collage' 很常見，指的是把多張照片組合在一起的圖片。要注意它與 'colleague'（同事）拼寫不同。"
+ },
+ {
+  "word": "effortlessly",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "/ˈef.ɚt.ləs.li/",
+  "etymology": "ef-(向外) + fort(力量) → 花費力量(effort) + -less(沒有) + -ly(副詞字尾) → 不費力地",
+  "pos_forms": [
+   {
+    "form": "effort",
+    "type": "n.",
+    "zh": "努力、嘗試"
+   },
+   {
+    "form": "effortless",
+    "type": "adj.",
+    "zh": "不費力的、輕鬆的"
+   },
+   {
+    "form": "effortlessly",
+    "type": "adv.",
+    "zh": "毫不費力地、輕鬆地"
+   }
+  ],
+  "collocations": [
+   "glide effortlessly",
+   "move effortlessly",
+   "manage effortlessly"
+  ],
+  "synonyms": [
+   {
+    "word": "easily",
+    "diff": "最普遍的『容易地』，單純指任務難度低或沒有遇到困難；而 effortlessly 則更強調因為技巧高超或熟練，而展現出『優雅、看不出有在出力』的輕鬆感。"
+   },
+   {
+    "word": "readily",
+    "diff": "側重於『毫無遲疑地、樂意地』或『立即、隨手可得地』，通常與意願或便利性相關；effortlessly 則純粹描述動作或過程的流暢與不費吹灰之力。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "She switched between English and Japanese effortlessly during the international business conference.",
+    "zh": "在國際商務會議上，她在英文和日文之間輕鬆流暢地切換。",
+    "tag": "toeic"
+   },
+   {
+    "en": "The drone captured the scenic views while gliding effortlessly through the valley.",
+    "zh": "無人機輕鬆地滑翔穿過山谷，同時捕捉了壯麗的景色。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容某人因為具備極高的才華、熟練度或經驗，在執行某項複雜的任務時，看起來非常流暢、自然且毫不費力。在商務或創作情境中，很適合用來稱讚專業人士的技術表現。形容物體（如車輛、科技設備）時，則指其運作極其平順。"
+ },
+ {
+  "word": "awaiting",
+  "level": "B1",
+  "toeic_freq": "high",
+  "kk": "/əˈweɪt.ɪŋ/",
+  "etymology": "a-(朝向、加強語氣) + wait(等待) → 朝著某人事物等待 → 正在等待、準備迎接。此處多為動詞 await 的現在分詞或作形容詞使用",
+  "pos_forms": [
+   {
+    "form": "await",
+    "type": "v.",
+    "zh": "等待、將降臨於"
+   },
+   {
+    "form": "awaiting",
+    "type": "adj.",
+    "zh": "正在等待的"
+   }
+  ],
+  "collocations": [
+   "awaiting confirmation",
+   "awaiting reply",
+   "eagerly awaiting"
+  ],
+  "synonyms": [
+   {
+    "word": "waiting",
+    "diff": "最普遍的『等待』，後面必須加上介係詞 for 才能接賓語（如 waiting for the bus）；而 awaiting 是及物動詞，後面直接加上被等待的人事物。"
+   },
+   {
+    "word": "expecting",
+    "diff": "側重於理所當然地『預期、期待』某事發生，或指人懷孕；awaiting 則是單純且客觀地『在原地等候』某人或信件的到來。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "We are currently awaiting confirmation from the finance department before we can approve your reimbursement.",
+    "zh": "在我們核准您的費用核銷之前，我們目前正在等待財務部的確認。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I'm still awaiting a reply from the landlord about the leaking pipe in the bathroom.",
+    "zh": "關於浴室水管漏水的事，我都還在等房東的回信。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用作及物動詞 await 的現在分詞，在商務書信中極為高頻，常用來表達『正在等待信件、核准、指示或結果』。比起一般口語的 wait for，它更具正式與專業感。在使用上，後面絕對不能加上 for，否則就是文法錯誤。"
+ },
+ {
+  "word": "approval",
+  "level": "B1",
+  "toeic_freq": "high",
+  "kk": "/əˈpruː.vəl/",
+  "etymology": "ap-(朝向) + prove(證明、測試) + -al(名詞字尾) → 證明是好的 → 贊成、批准、同意",
+  "pos_forms": [
+   {
+    "form": "approve",
+    "type": "v.",
+    "zh": "批准、贊成、同意"
+   },
+   {
+    "form": "approval",
+    "type": "n.",
+    "zh": "批准、認可、贊同"
+   },
+   {
+    "form": "approved",
+    "type": "adj.",
+    "zh": "經核准的、被認可的"
+   }
+  ],
+  "collocations": [
+   "seek approval",
+   "written approval",
+   "seal of approval"
+  ],
+  "synonyms": [
+   {
+    "word": "permission",
+    "diff": "通常指私底下或口頭給予的『允許、許可』，多用於日常生活中；而 approval 則較正式，通常指經過官方或主管審查後給予的『批准、認可』。"
+   },
+   {
+    "word": "authorization",
+    "diff": "比 approval 更正式且具備法律效力，指賦予某人特定權限的『授權』，而 approval 側重於對某個提案或行為表示同意。"
+   },
+   {
+    "word": "consent",
+    "diff": "側重於當事人主觀上的『同意、答應』，常出現在法律或醫療同意的情境中，不像 approval 帶有上下級審查的色彩。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "We cannot proceed with the budget allocation until we receive final approval from the board of directors.",
+    "zh": "在收到董事會的最終批准之前，我們無法進行預算分配。",
+    "tag": "toeic"
+   },
+   {
+    "en": "My parents gave their full approval when I told them I wanted to study photography in Japan.",
+    "zh": "當我告訴父母我想去日本學攝影時，他們表示非常贊同。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來指主管或官方機構對某個企劃、預算或請求的『批准』或『核准』，在多益考試中非常高頻。另外也可以指心理上的『贊同、滿意』。常用搭配為 'seek approval for something'（就某事尋求批准）或 'with the approval of someone'（在某人的同意下）。"
+ },
+ {
+  "word": "facilities",
+  "level": "B1",
+  "toeic_freq": "high",
+  "kk": "/fəˈsɪl.ə.t̬iz/",
+  "etymology": "facil-(容易、便利) + -ity(名詞字尾) + -es(複數形) → 讓事情變得容易做到的設備 → 設施、設備",
+  "pos_forms": [
+   {
+    "form": "facility",
+    "type": "n.",
+    "zh": "設施(單數)、場所、才能"
+   },
+   {
+    "form": "facilities",
+    "type": "n.",
+    "zh": "設施、設備(複數)"
+   },
+   {
+    "form": "facilitate",
+    "type": "v.",
+    "zh": "促進、使便利"
+   }
+  ],
+  "collocations": [
+   "sports facilities",
+   "production facilities",
+   "medical facilities"
+  ],
+  "synonyms": [
+   {
+    "word": "equipment",
+    "diff": "為不可數名詞，通常指為了特定目的所需的『工具、儀器或硬體設備』（如攝影器材或廚房用具）；而 facilities 專指大型、提供特定便利功能的『建築物、場所或成套設施』。"
+   },
+   {
+    "word": "amenities",
+    "diff": "側重於為了讓人感到『舒適、愉快或便利』而提供的附加設施（如飯店的游泳池、盥洗用品或健身房）；facilities 則更廣義地指滿足基本功能所需的軟硬體設施。"
+   },
+   {
+    "word": "appliances",
+    "diff": "專指『家用電器設備』（如冰箱、微波爐、洗衣機），範圍比 facilities 小很多。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The corporate headquarters will upgrade its research facilities next month to support the development of new automation tools.",
+    "zh": "公司總部將於下個月升級其研究設施，以支持新自動化工具的開發。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Our new apartment building has great sports facilities, including a rooftop gym and an indoor swimming pool.",
+    "zh": "我們的新公寓大樓有很棒的運動設施，包括頂樓健身房和室內游泳池。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常以複數形出現，用來指稱某個特定地點所提供、用來滿足某種特定功能的『建築物、大型設施或整套設備』。在多益考試中，常出現在工廠生產線翻修、辦公大樓介紹或飯店設施服務的場景。單數形 facility 還可以衍生出『天賦、才能』的意思。"
+ },
+ {
+  "word": "erosion",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "/ɪˈroʊ.ʒən/",
+  "etymology": "e-(向外) + rodere(啃咬、刮) + -ion(名詞字尾) → 往外啃咬掉 → 侵蝕、腐蝕",
+  "pos_forms": [
+   {
+    "form": "erode",
+    "type": "v.",
+    "zh": "侵蝕、腐蝕、削弱"
+   },
+   {
+    "form": "erosion",
+    "type": "n.",
+    "zh": "侵蝕、腐蝕、削弱"
+   }
+  ],
+  "collocations": [
+   "soil erosion",
+   "erosion of profits",
+   "coastal erosion"
+  ],
+  "synonyms": [
+   {
+    "word": "corrosion",
+    "diff": "主要指化學反應引起的『腐蝕』或生鏽（如金屬腐蝕），而 erosion 則指風、水等物理力量引起的『侵蝕』，或抽象特質的逐漸削弱。"
+   },
+   {
+    "word": "destruction",
+    "diff": "指全面且劇烈的『破壞、毀滅』，通常是瞬間或短時間內發生的；erosion 則強調『長期、漸進式』的磨損與流失。"
+   },
+   {
+    "word": "decline",
+    "diff": "泛指數量、品質或強度的『下降、衰退』；erosion 則更形象化地描述原本穩固的基礎被『逐漸掏空、剝蝕』的過程。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The sudden rise in raw material costs caused a gradual erosion of our profit margins this quarter.",
+    "zh": "原物料成本的突然上漲，導致我們本季的利潤率受到了逐漸的侵蝕。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We need to plant more trees along the riverbank to prevent soil erosion during the typhoon season.",
+    "zh": "我們需要在河岸兩旁種植更多樹木，以防止颱風季節期間的土壤流失。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "既可用於自然科學情境，形容風或水流對地表的『侵蝕、流失』；也極常用於商務與政治情境，形容權力、貨幣價值、利潤或信任因外部因素而『逐漸削弱、流失』。在使用時，後面常接介係詞 'of' 來表明被侵蝕的對象。"
+ },
+ {
+  "word": "delegation",
+  "level": "C1",
+  "toeic_freq": "high",
+  "kk": "/ˌdel.əˈɡeɪ.ʃən/",
+  "etymology": "de-(向下、離開) + legare(委派、作為代表傳達) + -ation(名詞字尾) → 將權力向下委派給他人 → 委任、代表團",
+  "pos_forms": [
+   {
+    "form": "delegate",
+    "type": "v.",
+    "zh": "委派、授權、把工作托付給"
+   },
+   {
+    "form": "delegate",
+    "type": "n.",
+    "zh": "代表、會議代表"
+   },
+   {
+    "form": "delegation",
+    "type": "n.",
+    "zh": "委派、授權、代表團"
+   }
+  ],
+  "collocations": [
+   "effective delegation",
+   "delegation of authority",
+   "foreign delegation"
+  ],
+  "synonyms": [
+   {
+    "word": "assignment",
+    "diff": "指具體『指派的工作或任務』本身，而 delegation 強調的是『權力或責任的下放與轉移』過程。"
+   },
+   {
+    "word": "representation",
+    "diff": "側重於作為群體的代表去『呈現、象徵』某種立場，而 delegation 則常指被派去參與特定會議的『實體代表團』或實際的權力委任。"
+   },
+   {
+    "word": "empowerment",
+    "diff": "指『賦予他人力量或自主權』，讓其有能力做決定；delegation 則是將原本屬於自己的具體職責和權限『移交』出去。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Successful management requires effective delegation so that team leaders can focus on long-term project planning.",
+    "zh": "成功的管理需要有效的權力下放，這樣團隊主管才能專注於長期的專案規劃。",
+    "tag": "toeic"
+   },
+   {
+    "en": "A large delegation of international photographers arrived in Osaka yesterday for the upcoming media expo.",
+    "zh": "一個由國際攝影師組成的龐大代表團昨天抵達大阪，準備參加即將舉行的媒體博覽會。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "在商務與多益情境中，常指主管將權限或任務下放給下屬的『委任』行為，是管理學的核心詞彙。另一個常見用法是集合名詞，指代表某國家、企業或組織出席會議的『代表團』。特別注意它是不可數名詞（指權力下放時）或可數名詞（指代表團時）。"
+ },
+ {
+  "word": "auditorium",
+  "level": "B1",
+  "toeic_freq": "high",
+  "kk": "/ˌɑː.dəˈtɔːr.i.əm/",
+  "etymology": "audi-(聽) + -torium(場所) → 聽聲音的場所 → 禮堂、演藝廳",
+  "pos_forms": [
+   {
+    "form": "auditorium",
+    "type": "n.",
+    "zh": "禮堂、會堂、演藝廳"
+   },
+   {
+    "form": "auditory",
+    "type": "adj.",
+    "zh": "聽覺的"
+   }
+  ],
+  "collocations": [
+   "school auditorium",
+   "packed auditorium",
+   "auditorium seating"
+  ],
+  "synonyms": [
+   {
+    "word": "hall",
+    "diff": "hall 的範圍極廣，可以指走廊、家中的大廳或各式集會用的廳堂；而 auditorium 專指有觀眾席、通常配有舞台且設計來舉辦演講或表演的『大禮堂』。"
+   },
+   {
+    "word": "stadium",
+    "diff": "stadium 指的是開放式或露天的『體育場、體育館』，通常很大且多用於運動賽事；auditorium 則一定是室內建築，主要用於會議或藝文演出。"
+   },
+   {
+    "word": "theater",
+    "diff": "theater 通常是指專門用來放映電影或上演戲劇的『戲院、劇院』，設施配置更偏向特定的娛樂表演；auditorium 則多見於學校或企業大樓，功能較偏向集會與簡報。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The annual shareholder meeting will be held in the main auditorium on the first floor to accommodate all attendees.",
+    "zh": "年度股東大會將在一樓的主禮堂舉行，以容納所有與會者。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We managed to grab seats at the very front of the auditorium for the guest lecture.",
+    "zh": "我們成功搶到了禮堂最前排的位置來聽這場客座演講。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來指大型、封閉式的『禮堂』或『演藝廳』，最醒目的特徵是內部有大量的觀眾座位區。在多益考試中，常出現在公司大會、頒獎典禮或大型培訓講座的地點更動通知中。複數形可以是 auditoriums 或 auditoria。"
+ },
+ {
+  "word": "subsequently",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/ˈsʌb.sɪ.kwənt.li/",
+  "etymology": "sub-(在...之後) + sequi(跟隨) + -ently(副詞字尾) → 緊隨其後地 → 隨後、接著",
+  "pos_forms": [
+   {
+    "form": "subsequent",
+    "type": "adj.",
+    "zh": "隨後的、後來的"
+   },
+   {
+    "form": "subsequently",
+    "type": "adv.",
+    "zh": "隨後、接著、後來"
+   }
+  ],
+  "collocations": [
+   "subsequently discovered",
+   "subsequently amended",
+   "subsequently developed"
+  ],
+  "synonyms": [
+   {
+    "word": "afterward",
+    "diff": "最普遍的『後來、之後』，口語和書面皆常用，而 subsequently 語氣更正式，通常用來講述一系列有前後因果或邏輯順序的事件。"
+   },
+   {
+    "word": "later",
+    "diff": "指未來或過去的『稍後、遲些』，時間點比較籠統，而 subsequently 則明確強調是在某個特定事件發生『之後接著發生』。"
+   },
+   {
+    "word": "consequently",
+    "diff": "側重於『因此、結果』，強調純粹的因果關係，而 subsequently 則主要強調時間上的『先後順序』。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The marketing proposal was rejected by the manager, and the team subsequently revised the entire campaign strategy.",
+    "zh": "該行銷提案被經理否決了，團隊隨後修改了整個活動策略。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We met briefly at the Osaka photography exhibition and subsequently became close business partners.",
+    "zh": "我們在大阪攝影展上短暫見過面，隨後便成了緊密的商業夥伴。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這是一個非常正式的副詞，主要用於書面報告、商業書信或正式的事件敘述中，用來銜接兩個按照時間先後發生的動作。在日常輕鬆的口語中，通常會被 'later' 或 'after that' 取代。使用時通常放在動詞前面或句子開頭。"
+ },
+ {
+  "word": "severely",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/səˈvɪr.li/",
+  "etymology": "severe(嚴厲的、嚴重的) + -ly(副詞字尾) → 嚴重地、嚴厲地",
+  "pos_forms": [
+   {
+    "form": "severe",
+    "type": "adj.",
+    "zh": "嚴重的、嚴厲的、劇烈的"
+   },
+   {
+    "form": "severely",
+    "type": "adv.",
+    "zh": "嚴重地、嚴厲地、嚴酷地"
+   },
+   {
+    "form": "severity",
+    "type": "n.",
+    "zh": "嚴重性、嚴厲"
+   }
+  ],
+  "collocations": [
+   "severely damaged",
+   "severely affect",
+   "severely punished"
+  ],
+  "synonyms": [
+   {
+    "word": "badly",
+    "diff": "最普遍的『糟糕地、嚴重地』，口語常用且範圍廣，而 severely 語氣更強，通常形容受損、受打擊的程度極深。"
+   },
+   {
+    "word": "critically",
+    "diff": "專指嚴重到『危急、攸關生死或成敗』的緊要關頭，常修飾傷勢（critically injured）或系統狀態。"
+   },
+   {
+    "word": "harshly",
+    "diff": "側重於態度或方式上的『嚴厲地、刻薄地』，而 severely 既能形容態度嚴厲，也能形容客觀狀態的嚴重受損。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The prolonged heavy rain severely delayed the shipping schedule, affecting our distribution center in Osaka.",
+    "zh": "持續的暴雨嚴重延誤了出貨時程，影響了我們位於大阪的物流中心。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I burnt my tongue severely on that hot coffee, so I can't taste anything right now.",
+    "zh": "我被那杯熱咖啡嚴重燙到了舌頭，所以現在吃什麼都沒味道。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "主要用來修飾負面的狀態，形容受損、受影響的程度非常極端，或者主管、法律處罰的態度非常嚴厲。多益考試中非常習慣與 'damaged'（受損）或 'affected'（受影響）連用。在形容人受傷時， severely injured 通常代表需要住院治療的嚴重程度。"
+ },
+ {
+  "word": "owing",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/ˈoʊ.ɪŋ/",
+  "etymology": "源自 owe(欠債、欠人情) + -ing(現在分詞字尾) → 處於欠著、歸因於的狀態",
+  "pos_forms": [
+   {
+    "form": "owe",
+    "type": "v.",
+    "zh": "欠(債)、歸功於"
+   },
+   {
+    "form": "owing",
+    "type": "adj.",
+    "zh": "欠著的、未付的"
+   },
+   {
+    "form": "owing to",
+    "type": "prep.",
+    "zh": "因為、由於"
+   }
+  ],
+  "collocations": [
+   "owing to the rain",
+   "fees still owing",
+   "owing to circumstances"
+  ],
+  "synonyms": [
+   {
+    "word": "due to",
+    "diff": "兩者都表示『由於』，但 due to 在傳統文法中較常作形容詞修飾名詞，而 owing to 則作副詞修飾整個句子，不過現代商務英語中兩者常通用。"
+   },
+   {
+    "word": "because of",
+    "diff": "最普遍、口語的『因為』，適用於所有情境；相比之下，owing to 語氣更為正式，極常出現在書面公告或商務公文中。"
+   },
+   {
+    "word": "thanks to",
+    "diff": "側重於『多虧了、幸虧』，通常帶有正面或感激的色彩，而 owing to 則是中性地陳述客觀原因。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The flight expansion was temporarily suspended owing to technical issues with the booking system.",
+    "zh": "由於訂位系統出現技術問題，航班擴展計畫已被暫時擱置。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We still have a small balance owing on our electricity bill, so I need to pay it today.",
+    "zh": "我們的電費帳單還有一點尾款沒付，所以我今天得去繳清。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "最常以 'owing to' 的片語形式出現，用來引出導致某事發生的原因，在商務書信、公告中非常高頻，通常用來解釋延誤或變更。另外，當它單獨作形容詞放在名詞後面時，表示『款項仍欠著、未付的』。"
+ },
+ {
+  "word": "climate",
+  "level": "A2",
+  "toeic_freq": "high",
+  "kk": "/ˈklaɪ.mət/",
+  "etymology": "源自古希臘語 klima(傾斜) → 指地球表面相對於太陽光線的傾斜角度 → 決定了不同地區的緯度與氣候 → 氣候、風氣",
+  "pos_forms": [
+   {
+    "form": "climate",
+    "type": "n.",
+    "zh": "氣候、形勢、風氣"
+   },
+   {
+    "form": "climatic",
+    "type": "adj.",
+    "zh": "氣候的"
+   },
+   {
+    "form": "climatology",
+    "type": "n.",
+    "zh": "氣候學"
+   }
+  ],
+  "collocations": [
+   "climate change",
+   "investment climate",
+   "political climate"
+  ],
+  "synonyms": [
+   {
+    "word": "weather",
+    "diff": "指某個特定地點在『短時間內』的風雨、陰晴等大氣狀態（如今天的氣候不好要改稱今天的天氣不好）；而 climate 則是長期（通常數十年）的平均氣候規律。"
+   },
+   {
+    "word": "atmosphere",
+    "diff": "主要指圍繞地球的『大氣層』，引申為某個空間或場合當下的『氣氛、氛圍』；而 climate 當引申義時，多指整個社會、政經環境在一段時期內的『風氣、大環境形勢』。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The unstable political situation has severely affected the country's investment climate, making foreign companies hesitant to build new production facilities.",
+    "zh": "不穩定的政治局勢已嚴重影響了該國的投資環境，使得外國公司對於建立新的生產設施感到猶豫不決。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I really love the Mediterranean climate here; the summers are dry and warm, which is perfect for outdoor photography.",
+    "zh": "我真的很喜歡這裡的地中海型氣候；夏天乾燥又溫暖，非常適合進行戶外攝影。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "主要指自然界長期的『氣候』狀態。但在多益商務情境中，極常轉化為抽象概念，用來形容商業、經濟、政治或社會的『整體風氣、大環境形勢』，例如 'economic climate'（經濟氣候/大環境）。使用時要注意它和短期的 'weather'（天氣）不要混淆。"
+ },
+ {
+  "word": "evergreen",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "/ˈev.ɚ.ɡriːn/",
+  "etymology": "ever(總是、永遠) + green(綠色的) → 終年常綠的植物 → 引申為長青的、永不過時的",
+  "pos_forms": [
+   {
+    "form": "evergreen",
+    "type": "adj.",
+    "zh": "常綠的、長青的、永不過時的"
+   },
+   {
+    "form": "evergreen",
+    "type": "n.",
+    "zh": "常綠植物、萬年青"
+   }
+  ],
+  "collocations": [
+   "evergreen content",
+   "evergreen product",
+   "evergreen trees"
+  ],
+  "synonyms": [
+   {
+    "word": "timeless",
+    "diff": "側重於超越時間限制，不因時代變遷而失去價值或顯得過時，常形容藝術或設計；而 evergreen 在商務與行銷中，更常用於形容那些『持續帶來流量、銷量或關注』的產品或內容。"
+   },
+   {
+    "word": "perennial",
+    "diff": "常指『植物多年生的』，引申為長期存在、反覆出現的問題或話題（如 perennial complaints）；evergreen 則多指保持新鮮、持續有吸引力的人事物。"
+   },
+   {
+    "word": "enduring",
+    "diff": "側重於經得起時間、考驗或痛苦而『持久、不衰』的特質，帶有一種堅韌感。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Creating evergreen content on our brand blog ensures a steady stream of website traffic without constant updates.",
+    "zh": "在我們的品牌部落格上創作長青內容，可以確保在不頻繁更新的情況下，仍有穩定的網站流量。",
+    "tag": "toeic"
+   },
+   {
+    "en": "That classic love song is an evergreen; people of all generations still love to sing it at karaoke.",
+    "zh": "那首經典情歌真的是歷久彌新，不論哪個世代的人在 KTV 都還是很愛唱。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "字面意思是『常綠植物』。在商業、行銷和媒體圈中，極常用來形容『不會隨時間或潮流退流行』的產品、內容或話題。例如 'evergreen sales strategy' 指的是長久有效的銷售策略。使用時要注意它不適合用來形容單純的『長壽』，而是強調『持續保持活力或效益』。"
+ },
+ {
+  "word": "segment",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/ˈseɡ.mənt/",
+  "etymology": "seg-(切、割) + -ment(名詞字尾) → 被切開出來的獨立部分 → 部分、區段、市場區隔",
+  "pos_forms": [
+   {
+    "form": "segment",
+    "type": "n.",
+    "zh": "部分、片段、部門、市場區隔"
+   },
+   {
+    "form": "segment",
+    "type": "v.",
+    "zh": "分割、劃分"
+   },
+   {
+    "form": "segmentation",
+    "type": "n.",
+    "zh": "分割、細胞分裂、市場細分"
+   }
+  ],
+  "collocations": [
+   "market segment",
+   "a segment of",
+   "audience segment"
+  ],
+  "synonyms": [
+   {
+    "word": "portion",
+    "diff": "側重於從整體中分配、切分出來屬於某人或某用途的『一份』，常與食物、財產或責任相關。"
+   },
+   {
+    "word": "section",
+    "diff": "指一個大結構、組織、書籍或建築物中，有明顯界線的『區塊』或『部門』。"
+   },
+   {
+    "word": "sector",
+    "diff": "通常指規模龐大的經濟、社會或政治領域中的『行業、部門』，例如私營經濟部門（private sector）。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our upcoming promotional campaign is specifically designed to target the younger consumer segment.",
+    "zh": "我們即將推出的促銷活動是專門針對年輕消費者群體而設計的。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I missed the first segment of the interview because my video meeting ran over by ten minutes.",
+    "zh": "因為我的視訊會議延誤了十分鐘，我錯過了這段專訪的第一部分。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "常指從一個較大整體中自然分出或被切分出來的『一部分』。在多益商務情境中，極高頻用於行銷領域的『市場區隔』或『客戶群』，例如 'market segment'。若當作動詞使用，則指將資料或市場依照特定特徵進行『分類、切割』。"
+ },
+ {
+  "word": "optimal",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "/ˈɑːp.tə.məl/",
+  "etymology": "optim-(最佳、最好) + -al(形容詞字尾) → 最佳的、最理想的",
+  "pos_forms": [
+   {
+    "form": "optimal",
+    "type": "adj.",
+    "zh": "最佳的、最理想的"
+   },
+   {
+    "form": "optimize",
+    "type": "v.",
+    "zh": "優化、使完善"
+   },
+   {
+    "form": "optimization",
+    "type": "n.",
+    "zh": "最佳化、優化"
+   }
+  ],
+  "collocations": [
+   "optimal performance",
+   "optimal temperature",
+   "optimal conditions"
+  ],
+  "synonyms": [
+   {
+    "word": "best",
+    "diff": "最普遍、口語的 '最好的'，可以用於任何日常人事物；而 optimal 語氣更正式，通常指在特定限制或條件下經過科學或邏輯計算出的 '最理想、最合適的'。"
+   },
+   {
+    "word": "ideal",
+    "diff": "側重於符合心中完美標準的 '理想的'，有時帶有一點流於空想、現實中不易達到的色彩；optimal 則強調在現實條件下能達到最大效益的平衡點。"
+   },
+   {
+    "word": "perfect",
+    "diff": "指毫無瑕疵、完美的狀態；而 optimal 不一定指完美，而是指最能發揮功效、最權衡利弊後的選擇。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our IT department is upgrading the server configurations to ensure optimal performance of the automated tracking system.",
+    "zh": "我們的資訊部門正在升級伺服器配置，以確保自動化追蹤系統能發揮最佳效能。",
+    "tag": "toeic"
+   },
+   {
+    "en": "To capture the perfect sunset, you need to find the optimal exposure settings on your camera before the light fades.",
+    "zh": "為了捕捉完美的日落，你需要在光線變暗之前，調整好相機的最佳曝光設定。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "常用於商務、工程或科學技術情境中，用來形容某個系統、計畫、溫度或設定處於 '最能發揮效益、最理想的' 狀態。在探討工作效率、資源分配或軟硬體效能時非常高頻。常用來修飾 performance（效能）、conditions（條件）或 timing（時機）。"
+ },
+ {
+  "word": "connecting",
+  "level": "A2",
+  "toeic_freq": "high",
+  "kk": "/kəˈnekt.ɪŋ/",
+  "etymology": "con-(共同) + nect(綁、繫) + -ing(現在分詞轉形容詞) → 綁在一起的 → 連接的、銜接的",
+  "pos_forms": [
+   {
+    "form": "connect",
+    "type": "v.",
+    "zh": "連接、連結"
+   },
+   {
+    "form": "connection",
+    "type": "n.",
+    "zh": "連接、關係、人脈"
+   },
+   {
+    "form": "connecting",
+    "type": "adj.",
+    "zh": "連接的、銜接的、聯絡的"
+   }
+  ],
+  "collocations": [
+   "connecting flight",
+   "connecting room",
+   "connecting cable"
+  ],
+  "synonyms": [
+   {
+    "word": "linking",
+    "diff": "側重於將兩個獨立的人、事、物或概念建立起『邏輯或因果上的關聯』；connecting 則多用於空間、硬體設備或路線上實際的『相連與銜接』。"
+   },
+   {
+    "word": "joining",
+    "diff": "強調將原本分開的兩個部分『結合、拼湊成一個整體』，通常會改變原有的結構；connecting 則指維持兩者獨立的情況下進行通路或信號的搭接。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Passengers traveling to New York need to double-check the gate number for their connecting flight upon arrival.",
+    "zh": "前往紐約的旅客在抵達時，需要再次確認其銜接航班的登機門號碼。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We booked two connecting rooms at the hotel so it's easier for the whole family to move around.",
+    "zh": "我們在飯店訂了兩間相通的房間，這樣全家人走動比較方便。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常作形容詞使用，用來形容正在進行空間、交通工具或硬體裝置『銜接、相通』的狀態。在多益中，最核心的考點非 'connecting flight'（轉機航班）莫屬。另外在介紹飯店設施時，'connecting rooms'（連通房）也十分常見。"
+ },
+ {
+  "word": "strip",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "/strɪp/",
+  "etymology": "源自古英語 strīpan(剝皮、掠奪) → 剝去外皮或衣物 → 引申為長條狀物(如同剝下來的一長條皮)",
+  "pos_forms": [
+   {
+    "form": "strip",
+    "type": "v.",
+    "zh": "剝去、除掉、拆卸、奪去"
+   },
+   {
+    "form": "strip",
+    "type": "n.",
+    "zh": "條、帶狀物、商業街、跑道"
+   }
+  ],
+  "collocations": [
+   "strip away",
+   "power strip",
+   "a strip of land"
+  ],
+  "synonyms": [
+   {
+    "word": "peel",
+    "diff": "主要指用手或工具『剝除水果、蔬菜的外皮』，或是指皮膚、牆面塗料的『脫落』。"
+   },
+   {
+    "word": "remove",
+    "diff": "最泛用的『移開、免除』，語氣中性，不帶有像 strip 那種『用力扯下、剝光或剝奪』的強烈動作感。"
+   },
+   {
+    "word": "deprive",
+    "diff": "專指在法律、權利或心理上『剝奪、強行奪去』某人應有的東西，後面常接介係詞 'of'，不用於實體物質的剝除。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The maintenance crew needs to strip the old wax off the auditorium floor before applying a new coat.",
+    "zh": "維護人員需要在塗上新蠟之前，將禮堂地板上的舊蠟刮除乾淨。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Could you pass me that power strip? I need to plug in my camera battery charger and laptop at the same time.",
+    "zh": "你可以把那個延長線插座拿給我嗎？我需要同時幫我的相機電池充電器和筆電插上電源。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "作動詞時，常用於指『剝去、拆卸』實體表面（如除漆、拆設備）或抽象權力（如剝奪職位）；作名詞時，除了指『長條狀物』之外，在商務與日常生活中也極常搭配其他詞彙，例如 'power strip' 指延長線插座、'strip mall' 指帶狀商業街，或是指機場的『簡易跑道』。"
+ },
+ {
+  "word": "tedious",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[ˈtidɪəs]",
+  "etymology": "源自拉丁語 taedium(厭煩/疲憊) + -ous(充滿...的形容詞字尾) → 令人感到極度厭倦與疲憊的 → 單調乏味的、冗長沉悶的",
+  "pos_forms": [
+   {
+    "form": "tedious",
+    "type": "adj.",
+    "zh": "單調乏味的、冗長沉悶的"
+   },
+   {
+    "form": "tedium",
+    "type": "n.",
+    "zh": "單調、乏味、無聊"
+   },
+   {
+    "form": "tediously",
+    "type": "adv.",
+    "zh": "單調乏味地、沉悶地"
+   }
+  ],
+  "collocations": [
+   "tedious task",
+   "tedious process",
+   "become tedious"
+  ],
+  "synonyms": [
+   {
+    "word": "boring",
+    "diff": "最通俗的字，泛指任何讓人覺得無趣、沒有吸引力的人事物，但不一定強調耗時或程序繁瑣。"
+   },
+   {
+    "word": "dull",
+    "diff": "偏向形容缺乏色彩、生機或光澤，用於事或人時指『沉悶、平淡無奇』，缺乏刺激感。"
+   },
+   {
+    "word": "monotonous",
+    "diff": "特指因為聲音、節奏或動作『千篇一律、毫無變化』而產生的單調感。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Data entry can be a tedious task, but it is a crucial step in ensuring the accuracy of our customer database.",
+    "zh": "資料輸入可能是一項單調乏味的工作，但它是確保我們客戶資料庫準確性的關鍵步驟。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Sorting through hundreds of old emails was so tedious that I fell asleep at my desk.",
+    "zh": "整理幾百封舊郵件實在太沉悶乏味了，我竟然在書桌前睡著了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字主要用來形容某個過程、工作或演講『因為過於冗長、重複性高且非常耗時，讓人做到或聽到想打瞌睡』。與一般的 'boring' 相比，'tedious' 更強調那種『因為繁瑣程序而產生的身心疲憊感』。在多益中常用來形容行政庶務或系統檢查的重複性工作。"
+ },
+ {
+  "word": "intrigue",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[ɪnˈtriɡ]",
+  "etymology": "in-(在內) + tricare(障礙/小麻煩) → 陷入複雜的糾葛中 → 激起好奇心、密謀",
+  "pos_forms": [
+   {
+    "form": "intrigue",
+    "type": "v.",
+    "zh": "激起...的好奇心、密謀"
+   },
+   {
+    "form": "intrigue",
+    "type": "n.",
+    "zh": "陰謀、暗中策劃"
+   },
+   {
+    "form": "intriguing",
+    "type": "adj.",
+    "zh": "引人入勝的、有趣的"
+   }
+  ],
+  "collocations": [
+   "be intrigued by",
+   "political intrigue",
+   "intrigue against"
+  ],
+  "synonyms": [
+   {
+    "word": "interest",
+    "diff": "最泛用的字，單純指讓人產生一般性的『興趣』或關注，缺乏 intrigue 那種因為神祕、新奇而勾起強烈探索慾望的層次。"
+   },
+   {
+    "word": "fascinate",
+    "diff": "強調被某事物深深吸引而到了『著迷、入神』的程度，吸睛的強度比 intrigue 更高。"
+   },
+   {
+    "word": "plot",
+    "diff": "作名詞時同樣有陰謀之意，但 plot 更常用於文學作品的『情節佈局』或是針對特定目標的具體秘密計劃。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The venture capitalists were intrigued by the startup's innovative approach to renewable energy storage.",
+    "zh": "風投家們對這家新創公司在可再生能源儲存方面的創新方法深感興趣。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I was so intrigued by the trailer that I went online and bought the movie tickets right away.",
+    "zh": "我被那支預告片深深吸引，馬上就上網把電影票給買了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "作動詞時，最常用被動態 'be intrigued by'，形容某個新奇、神祕或特別的事物『勾起某人的強烈好奇心』。作名詞時則多用於政治、職場上的『暗中權謀或勾心鬥角』。在商務情境中，常形容某個新產品的企劃或商業模式成功引發市場關注。"
+ },
+ {
+  "word": "magnify",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[ˈmæɡnəˌfaɪ]",
+  "etymology": "magni-(magnus, 大) + -fy(使成為) → 使變大 → 放大、誇大",
+  "pos_forms": [
+   {
+    "form": "magnify",
+    "type": "v.",
+    "zh": "放大、擴大、誇張"
+   },
+   {
+    "form": "magnification",
+    "type": "n.",
+    "zh": "放大倍數、放大"
+   },
+   {
+    "form": "magnifying",
+    "type": "adj.",
+    "zh": "放大的"
+   }
+  ],
+  "collocations": [
+   "magnify the image",
+   "magnify the problem",
+   "magnifying glass"
+  ],
+  "synonyms": [
+   {
+    "word": "enlarge",
+    "diff": "主要指物理上將面積、尺寸或體積實際『變大』，例如沖洗照片或擴建房屋，而 magnify 多指透過鏡頭使物體『視覺上變大』。"
+   },
+   {
+    "word": "amplify",
+    "diff": "側重於增強聲音、信號、力量或電流的『強度或音量』，也常用於抽象地詳細闡述觀點。"
+   },
+   {
+    "word": "exaggerate",
+    "diff": "專指在言語上『誇大、言過其實』，把事情說得比實際情況更嚴重或更好，不具備物理上放大的意思。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The presentation slide is too small; you need to magnify the chart so the board members can see the data clearly.",
+    "zh": "簡報投影片太小了；你需要放大圖表，好讓董事會成員看清數據。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Don't focus only on your mistakes; you are just magnifying your problems and making yourself stressed.",
+    "zh": "別老是盯著自己的錯誤看；你只是在放大自己的問題，讓自己壓力很大而已。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字字面意思是透過鏡片（如顯微鏡、放大鏡）使物體在視覺上『變大、顯現更多細節』。在抽象用法上，常指『將問題或負面情緒無限放大、誇大』，通常帶有把事情看得比實際嚴重的負面意涵。在商務或多益情境中，常用於影像處理、報告呈現或危機處理的論述。"
+ },
+ {
+  "word": "vigor",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[ˈvɪɡɚ]",
+  "etymology": "源自拉丁語 vigere(充滿活力) → 身體或精神上的強壯與活力 → 精力、活力",
+  "pos_forms": [
+   {
+    "form": "vigor",
+    "type": "n.",
+    "zh": "活力、精力、熱情"
+   },
+   {
+    "form": "vigorous",
+    "type": "adj.",
+    "zh": "精力充沛的、激烈的、有力的"
+   },
+   {
+    "form": "vigorously",
+    "type": "adv.",
+    "zh": "精力充沛地、猛烈地"
+   }
+  ],
+  "collocations": [
+   "renewed vigor",
+   "with vigor",
+   "economic vigor"
+  ],
+  "synonyms": [
+   {
+    "word": "energy",
+    "diff": "最通俗廣義的字，指做事情所需的『能量、體力』，可指人或物理上的能源，而 vigor 更強調健康的生命力。"
+   },
+   {
+    "word": "vitality",
+    "diff": "側重於『生命力、持久的活力』，常用於形容一個組織、城市或人維持生存發展的生機，與 vigor 的爆發性精力略有不同。"
+   },
+   {
+    "word": "enthusiasm",
+    "diff": "指心理上的『熱情、熱忱』，強調對某人或某事物的強烈喜愛與投入，而不一定包含身體上的強壯或精力。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "After receiving the new funding, the research team tackled the product development project with renewed vigor.",
+    "zh": "在獲得新資金後，研發團隊以重新燃起的活力投入了這項產品開發專案。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Although he is already in his late seventies, he still exercises every morning with surprising vigor.",
+    "zh": "雖然他已經快八十歲了，每天早上依然以令人驚訝的活力在運動。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字主要用來形容『身體或精神上表現出的充沛精力與強健狀態』。常用於片語 'with vigor' 表現做某事的熱情勁頭。在商務或多益情境中，它也常被用來抽象地形容經濟的『活力』或市場的『繁榮景象』。"
+ },
+ {
+  "word": "stagger",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[ˈstægɚ]",
+  "etymology": "源自古諾斯語 stakra(推、使搖晃) → 走路搖晃不穩 → 蹣跚、使震驚、交錯排列",
+  "pos_forms": [
+   {
+    "form": "stagger",
+    "type": "v.",
+    "zh": "搖晃地走、使震驚、使交錯"
+   },
+   {
+    "form": "stagger",
+    "type": "n.",
+    "zh": "搖晃、蹣跚"
+   },
+   {
+    "form": "staggering",
+    "type": "adj.",
+    "zh": "令人震驚的、驚人的"
+   }
+  ],
+  "collocations": [
+   "staggered working hours",
+   "stagger down the hallway",
+   "be staggered by"
+  ],
+  "synonyms": [
+   {
+    "word": "stumble",
+    "diff": "指走路時腳被東西『絆到』而失去平衡，而 stagger 主要是因為體力不支、頭暈或醉酒導致的『腳步搖晃不穩』。"
+   },
+   {
+    "word": "shock",
+    "diff": "指精神上受到極大的『震撼或驚嚇』，而 stagger 作為使震驚時，更強調那種讓人『難以置信、站不穩腳步』的心理衝擊。"
+   },
+   {
+    "word": "alternate",
+    "diff": "指兩個事物輪流、交替出現，而 stagger 在時間或空間上的『交錯』更側重於為了分流或避免重疊而故意做出的錯開安排。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "To reduce peak-hour congestion on public transit, the department head decided to stagger the shifts of all office employees.",
+    "zh": "為了減少大眾運輸尖峰時段的擁擠，部門主管決定將所有辦公室員工的班表交錯開來。",
+    "tag": "toeic"
+   },
+   {
+    "en": "After carrying the heavy boxes up five flights of stairs, he was staggering with exhaustion.",
+    "zh": "把那些沉重的箱子搬上五樓後，他累到路都走不穩了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字字面意思是『走路搖晃、蹣跚』，常用於形容人極度疲憊或喝醉的狀態。但在商務和多益情境中，極常以過去分詞形式 'staggered' 出現，用來形容『錯開、交錯排列的』時間或班表（如 staggered office hours）。此外，它也常用來形容某個驚人的事實或數據讓人『大吃一驚』（be staggered by）。"
+ },
+ {
+  "word": "pact",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[pækt]",
+  "etymology": "源自拉丁語 pactus(結合、同意) → 雙方綁定在一起的協定 → 條約、協定",
+  "pos_forms": [
+   {
+    "form": "pact",
+    "type": "n.",
+    "zh": "協定、公約、條約"
+   }
+  ],
+  "collocations": [
+   "sign a pact",
+   "non-aggression pact",
+   "trade pact"
+  ],
+  "synonyms": [
+   {
+    "word": "contract",
+    "diff": "主要用於具法律效力的商業或個人之間的『契約、合同』，違反時有法律責任，範圍較為具體。"
+   },
+   {
+    "word": "treaty",
+    "diff": "多指國家與國家之間經過正式談判後簽署的『國際條約』，政治色彩與規格比 pact 更為正式。"
+   },
+   {
+    "word": "agreement",
+    "diff": "最廣義的字，泛指任何口頭或書面的『同意、協議』，可以是非常非正式的口頭約定。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The two tech giants signed a historic non-disclosure pact to safeguard their joint research data.",
+    "zh": "這兩家科技巨頭簽署了一項具歷史意義的保密協定，以保護雙方的聯合研究數據。",
+    "tag": "toeic"
+   },
+   {
+    "en": "My roommate and I made a pact to never leave dirty dishes in the kitchen sink overnight.",
+    "zh": "我跟我室友立了個約定，絕對不把髒碗盤留在廚房水槽裡過夜。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容兩方或多方為了共同目標而達成的『嚴肅協定或盟約』。在多益考試中，常出現在跨國貿易協定（trade pact）或企業間的戰略結盟；在日常生活中，則常用於朋友或家人之間為了某種習慣或承諾而做出的『認真約定』。"
+ },
+ {
+  "word": "indispensable",
+  "level": "C1",
+  "toeic_freq": "high",
+  "kk": "[ˌɪndɪˈspɛnsəbl]",
+  "etymology": "in-(not, 不) + dispensable(可分配出去的/可有可無的) → 不能被分發出去的 → 不可或缺的",
+  "pos_forms": [
+   {
+    "form": "indispensable",
+    "type": "adj.",
+    "zh": "不可或缺的、絕對必要的"
+   },
+   {
+    "form": "indispensably",
+    "type": "adv.",
+    "zh": "不可或缺地"
+   },
+   {
+    "form": "indispensability",
+    "type": "n.",
+    "zh": "不可或缺性"
+   }
+  ],
+  "collocations": [
+   "indispensable to",
+   "indispensable tool",
+   "prove indispensable"
+  ],
+  "synonyms": [
+   {
+    "word": "essential",
+    "diff": "指某物是構成整體『最基本、最核心』的要素，少了它就失去原本的本質。"
+   },
+   {
+    "word": "necessary",
+    "diff": "最通俗的字，僅表達『需要、有必要』，但在語意強度上遠不及 indispensable 那種『完全無法被取代』的程度。"
+   },
+   {
+    "word": "vital",
+    "diff": "側重於對生死、成敗或生存有『生死攸關的極大影響』，語氣帶有迫切性。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Her deep understanding of data privacy laws made her indispensable to the legal department during the system merger.",
+    "zh": "她對數據隱私法的深入了解，使她在系統合併期間成為法律部不可或缺的人才。",
+    "tag": "toeic"
+   },
+   {
+    "en": "A reliable coffee maker is pretty much indispensable if you want to survive a Monday morning at the office.",
+    "zh": "如果你想在辦公室熬過週一的早晨，一台可靠的咖啡機幾乎是不可或缺的。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字用來形容某人或某物『重要到完全無法被取代或剔除』，通常後面會搭配介系詞 'to' 或 'for' 來表示對什麼而言是不可或缺的。在多益考試中，常用於讚美某位員工是團隊中的『核心支柱』，或是某個自動化工具是業務運作的關鍵。"
+ },
+ {
+  "word": "perish",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[ˈpɛrɪʃ]",
+  "etymology": "per-(完全/離開) + ish-(it-, 去) → 完全離去 → 死亡、湮滅",
+  "pos_forms": [
+   {
+    "form": "perish",
+    "type": "v.",
+    "zh": "慘死、毀滅、腐爛"
+   },
+   {
+    "form": "perishable",
+    "type": "adj.",
+    "zh": "易腐壞的"
+   },
+   {
+    "form": "perishables",
+    "type": "n.",
+    "zh": "易腐壞的食品"
+   }
+  ],
+  "collocations": [
+   "perish in the crash",
+   "publish or perish",
+   "perish from hunger"
+  ],
+  "synonyms": [
+   {
+    "word": "die",
+    "diff": "最通俗直接的字，泛指任何生物生命的結束，不帶有文學色彩或慘烈的語氣。"
+   },
+   {
+    "word": "expire",
+    "diff": "常指合約或點數『過期失效』，若用於人則是非常委婉的『吐出最後一口氣、過世』。"
+   },
+   {
+    "word": "decompose",
+    "diff": "專指有機物『分解、腐爛』的化學或生物過程，不包含 perish 那種被天災或意外毀滅的含意。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Thousands of livestock perished in the severe drought, causing a financial crisis for local farmers.",
+    "zh": "數以千計的牲畜在這次嚴重的旱災中慘死，給當地農民帶來了財政危機。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Without a proper refrigerator, all the fresh berries we picked today will perish within twenty-four hours.",
+    "zh": "要是沒有像樣的冰箱，我們今天摘的這些新鮮莓果在二十四小時內就會爛掉。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容因『天災、意外、飢寒』等外力導致大量生命慘死或物品徹底毀滅，語氣比 die 更為正式且具文學感。在多益考試中，其形容詞形式 'perishable' 曝光率極高，經常用於食品物流、空運或倉儲管理的情境中。"
+ },
+ {
+  "word": "dismay",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[dɪsˈme]",
+  "etymology": "dis-(表否定/剝奪) + 源自古法語 -may (力量/能力) → 被剝奪了力量 → 使人感到氣餒、驚惶與沮喪",
+  "pos_forms": [
+   {
+    "form": "dismay",
+    "type": "n.",
+    "zh": "沮喪、驚慌、氣餒"
+   },
+   {
+    "form": "dismay",
+    "type": "v.",
+    "zh": "使沮喪、使驚慌"
+   },
+   {
+    "form": "dismayed",
+    "type": "adj.",
+    "zh": "感到沮喪的、大驚失色的"
+   }
+  ],
+  "collocations": [
+   "to someone's dismay",
+   "express dismay",
+   "look of dismay"
+  ],
+  "synonyms": [
+   {
+    "word": "disappointment",
+    "diff": "指純粹對期望落空感到的『失望』，不一定包含 dismay 那種因突發狀況而產生的驚慌與手足無措感。"
+   },
+   {
+    "word": "panic",
+    "diff": "指極度的『恐慌、驚慌』，通常伴隨著理智喪失或混亂的逃跑行為，而 dismay 偏向無力、沮喪的心理震驚。"
+   },
+   {
+    "word": "consternation",
+    "diff": "較為正式的字，指因出乎意料的壞消息而產生的『驚愕與大失所望』，情節通常比 dismay 更嚴重。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "To the marketing director's dismay, the quarterly sales report showed a significant decline despite the expensive advertising campaign.",
+    "zh": "讓行銷總監大失所望且沮喪的是，儘管投入了昂貴的廣告宣傳，季度銷售報告依然顯示大幅下滑。",
+    "tag": "toeic"
+   },
+   {
+    "en": "She watched in dismay as her laptop screen went completely black right before she could save her final essay.",
+    "zh": "就在她還來不及儲存期末論文前，眼睜睜看著筆電螢幕整個變黑，讓她心急又沮喪。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字主要用來形容『因為聽到壞消息或看到意料之外的糟糕結果，而同時產生驚慌、失望與無能為力的複雜心情』。最常見的句型是 'to one's dismay'（令某人沮喪的是）。在多益中常出現在專案失敗或數據不如預期的情境；日常生活中常用來形容面對倒楣突發狀況時的崩潰心情。"
+ },
+ {
+  "word": "verge",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[vɝdʒ]",
+  "etymology": "源自拉丁語 virga(嫩枝、條子) → 古代官員手持的權杖 → 權杖所及的邊界 → 邊緣、臨界點",
+  "pos_forms": [
+   {
+    "form": "verge",
+    "type": "n.",
+    "zh": "邊緣、臨界點"
+   },
+   {
+    "form": "verge",
+    "type": "v.",
+    "zh": "接近、瀕臨"
+   }
+  ],
+  "collocations": [
+   "on the verge of",
+   "verge on",
+   "bring to the verge of"
+  ],
+  "synonyms": [
+   {
+    "word": "edge",
+    "diff": "最普通的字，指物體、區域或表面的具體『邊緣』，較少用來形容抽象的心理或事件臨界點。"
+   },
+   {
+    "word": "brink",
+    "diff": "特指懸崖或陡峭處的邊緣，抽象上常用於極度危險、災難或重大變革的『生死關頭』。"
+   },
+   {
+    "word": "margin",
+    "diff": "多指紙張的留白邊緣，或是商業上的『利潤空間』、投票的『票數差距』，不強調事情快要發生的臨界感。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The startup was on the verge of bankruptcy before securing a major investment from a venture capital firm.",
+    "zh": "這家新創公司在獲得一家風險投資公司的重大投資之前，已經瀕臨破產邊緣。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I was on the verge of crying when they unexpectedly threw me a surprise birthday party.",
+    "zh": "當他們出乎意料地幫我辦了個驚喜生日派對時，我感動得差點哭出來。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "最常以片語 'on the verge of + 名詞/V-ing' 的形式出現，用來形容某件事情『已經到了馬上就要發生的極限狀態』。與 'brink' 相比，'verge' 可以用於正面或負面的轉折點，而 'brink' 則強烈偏向災難性的邊緣。"
+ },
+ {
+  "word": "relentless",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[rɪˈlɛntlɪs]",
+  "etymology": "re-(向後/變軟) + lent-(變慢/溫和) + -less(沒有) → 毫無變溫和的跡象 → 持續高強度的、無情的、不放棄的",
+  "pos_forms": [
+   {
+    "form": "relentless",
+    "type": "adj.",
+    "zh": "持續不斷的、高強度的、不屈不撓的、無情的"
+   },
+   {
+    "form": "relentlessly",
+    "type": "adv.",
+    "zh": "持續不斷地、殘酷地"
+   },
+   {
+    "form": "relent",
+    "type": "v.",
+    "zh": "變溫和、讓步、減弱"
+   }
+  ],
+  "collocations": [
+   "relentless pressure",
+   "relentless pursuit of",
+   "relentless competition"
+  ],
+  "synonyms": [
+   {
+    "word": "persistent",
+    "diff": "偏向中性或正面，指『堅持不懈的、持續存在的』，強調不因困難而放棄，少了一點 relentless 那種令人感到窒息的壓迫感。"
+   },
+   {
+    "word": "continuous",
+    "diff": "純粹形容時間或空間上『連續不斷的』，沒有任何情緒色彩，也無法用來形容人的態度或意志。"
+   },
+   {
+    "word": "ruthless",
+    "diff": "強調『無情的、殘忍的』，為了達到目的完全不在乎別人的感受或利益，帶有明確的負面道德批判。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The marketing team's relentless pursuit of new clients eventually made us the market leader in the software industry.",
+    "zh": "行銷團隊對新客戶永不停歇的追尋，最終讓我們成為軟體產業的市場龍頭。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I had to turn off my phone because the relentless notifications were ruining my weekend.",
+    "zh": "我不得不把手機關機，因為那響個不停的通知把我的週末全毀了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字通常用來形容某種力量、天氣、噪音或壓力『強度極高且完全沒有減弱的跡象』，常帶有一點讓人招架不住的壓迫感。如果用來形容人的態度或努力，則是讚美對方『不屈不撓、堅持到底』。在商務多益情境中，常與『競爭』或『對目標的追求』搭配。"
+ },
+ {
+  "word": "hamper",
+  "level": "C1",
+  "toeic_freq": "high",
+  "kk": "[ˈhæmpɚ]",
+  "etymology": "源自中古英語 hampren(束縛、阻礙) → 原指限制自由，後引申為使事情進展困難 → 阻礙、妨礙",
+  "pos_forms": [
+   {
+    "form": "hamper",
+    "type": "v.",
+    "zh": "阻礙、妨礙、阻撓"
+   },
+   {
+    "form": "hamper",
+    "type": "n.",
+    "zh": "有蓋的大籃子、洗衣籃"
+   }
+  ],
+  "collocations": [
+   "hamper growth",
+   "be severely hampered by",
+   "hamper efforts"
+  ],
+  "synonyms": [
+   {
+    "word": "hinder",
+    "diff": "指因為外在干擾或阻礙而拖慢了事情的進度，程度較輕，不一定會讓事情完全停擺。"
+   },
+   {
+    "word": "prevent",
+    "diff": "語氣最強，指採取行動去『徹底阻止』或預防某事發生，使其完全不可能成立。"
+   },
+   {
+    "word": "obstruct",
+    "diff": "側重於像設置路障一樣，在道路或程序中放置具體或抽象的『障礙物』來刻意堵塞、阻擋。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The rescue efforts were severely hampered by the heavy snowfall and limited visibility at the construction site.",
+    "zh": "工地現場的搜救工作因為大雪和能見度低而受到嚴重的阻礙。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I wanted to clear out my inbox today, but constant phone calls kept hampering my progress.",
+    "zh": "我今天本來想把收件匣清空，但電話一直響，不斷打斷我的進度。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容某種『外在環境、惡劣天氣、缺乏資源或突發狀況』，使得原本正在進行的計畫或活動變得異常艱難、寸步難行。在多益考試中，經常出現在物流延誤、工程進度受阻或經濟成長被抑制的脈絡。作名詞時則指日常生活中用來裝衣服或野餐用的大籃子。"
+ },
+ {
+  "word": "disciplinary",
+  "level": "C1",
+  "toeic_freq": "high",
+  "kk": "[ˈdɪsəpləˌnɛrɪ]",
+  "etymology": "disciple(信徒/追隨者) → discipline(紀律/管教) + -ary(形容詞字尾，與...有關的) → 與紀律或懲戒相關的",
+  "pos_forms": [
+   {
+    "form": "disciplinary",
+    "type": "adj.",
+    "zh": "紀律的、懲戒的、懲罰性的"
+   },
+   {
+    "form": "discipline",
+    "type": "n.",
+    "zh": "紀律、管教、專業學科"
+   },
+   {
+    "form": "discipline",
+    "type": "v.",
+    "zh": "懲罰、管教、自我克制"
+   }
+  ],
+  "collocations": [
+   "disciplinary action",
+   "disciplinary hearing",
+   "disciplinary measures"
+  ],
+  "synonyms": [
+   {
+    "word": "punitive",
+    "diff": "側重於法律或合約上法律手段的『懲罰性』賠償或手段，而 disciplinary 專指組織內部對違反規章者的『紀律處分』。"
+   },
+   {
+    "word": "corrective",
+    "diff": "強調旨在『糾正錯誤、改善表現』的措施，語氣比 disciplinary 更具建設性且少了一點懲罰色彩。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The human resources department launched an investigation, stating that any violation of the company code of conduct would result in strict disciplinary action.",
+    "zh": "人力資源部展開了調查，並聲明任何違反公司行為準則的行為都將導致嚴厲的紀律處分。",
+    "tag": "toeic"
+   },
+   {
+    "en": "He had to attend a disciplinary hearing yesterday because he was caught leaking confidential project details to a rival team.",
+    "zh": "他昨天必須參加一場紀律聽證會，因為他被抓到把機密專案細節洩漏給競爭團隊。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字在商務環境中非常常見，幾乎百分之九十都與職場上的『違規懲處』有關，最常搭配的詞是 'action'（處分）。它與單純的 'punitive' 不同，'disciplinary' 的範疇只限於學校、公司、軍隊等特定組織內部為了維持運作秩序而進行的管教或處罰。"
+ },
+ {
+  "word": "stride",
+  "level": "C1",
+  "toeic_freq": "low",
+  "kk": "[straɪd]",
+  "etymology": "源自古英語 strīdan(大步行走) → 跨大步向前走 → 大步、進展",
+  "pos_forms": [
+   {
+    "form": "stride",
+    "type": "n.",
+    "zh": "大步、步幅、進展、步伐"
+   },
+   {
+    "form": "stride",
+    "type": "v.",
+    "zh": "大步快走、跨越"
+   }
+  ],
+  "collocations": [
+   "make great strides",
+   "take something in one's stride",
+   "break one's stride"
+  ],
+  "synonyms": [
+   {
+    "word": "pace",
+    "diff": "著重於行進的『速度、節奏』或走路的步調，而非步伐跨度的大小。"
+   },
+   {
+    "word": "step",
+    "diff": "最通俗的字，泛指任何一步、腳步，沒有特別強調大步跨出或快走的動作。"
+   },
+   {
+    "word": "progress",
+    "diff": "作名詞時純粹指抽象的『進步、進展』，不具備任何跟雙腳走路或身體動作相關的字面含意。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our research and development team has made great strides in improving the battery efficiency of the new medical device.",
+    "zh": "我們的研發團隊在提升新醫療設備的電池效率方面，已經取得了重大的進展。",
+    "tag": "toeic"
+   },
+   {
+    "en": "She was late for the meeting, so she strode past the reception desk straight into the conference room.",
+    "zh": "她開會遲到了，於是大步走過接待櫃檯，直接走進會議室。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "作名詞時，常用於複數形式並搭配 make，如 'make great strides'，用來比喻在某個領域取得了『長足的進步』。作動詞時則常用來形容一個人因為自信、匆忙或腿長而『大步行走』的姿態。日常生活中著名的片語 'take something in stride' 意思是從容應對困難、把挫折看作理所當然。"
+ },
+ {
+  "word": "voucher",
+  "level": "B1",
+  "toeic_freq": "high",
+  "kk": "[ˈvaʊtʃɚ]",
+  "etymology": "vouch-(保證/證明) + -er(名詞字尾，表物品) → 可以用來保證或證明已付款的憑證 → 憑證、兌換券",
+  "pos_forms": [
+   {
+    "form": "voucher",
+    "type": "n.",
+    "zh": "金券、憑證、兌換券"
+   },
+   {
+    "form": "vouch",
+    "type": "v.",
+    "zh": "擔保、證明"
+   }
+  ],
+  "collocations": [
+   "gift voucher",
+   "travel voucher",
+   "redeem a voucher"
+  ],
+  "synonyms": [
+   {
+    "word": "coupon",
+    "diff": "通常指『折價券』，用來折抵部分金額或獲得特定折扣，而 voucher 通常可直接當作等值現金全額兌換商品。"
+   },
+   {
+    "word": "receipt",
+    "diff": "指『收據』，是消費交易完成後，用來證明已經付過錢的明細憑證，無法拿來重新兌換商品。"
+   },
+   {
+    "word": "ticket",
+    "diff": "泛指入場券、車票或機票，主要用來獲得進入某處或搭乘交通工具的權限，而非折抵消費。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Customers who completed the online customer satisfaction survey will receive a ten-dollar gift voucher via email.",
+    "zh": "填寫完線上客戶滿意度調查的顧客，將會透過電子郵件收到一張面額十美元的禮券。",
+    "tag": "toeic"
+   },
+   {
+    "en": "The hotel gave us a complimentary breakfast voucher because our room wasn't ready when we arrived.",
+    "zh": "因為我們到的時候房間還沒準備好，飯店便給了我們一張免費的早餐兌換券。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字主要指『已經預先付款或由商家贈送，可用來兌換特定商品或服務的憑證』。在多益考試中，極常出現在促銷活動、客戶補償（如班機延誤給的餐飲券）或員工福利的情境；日常生活中去餐廳、飯店或旅遊行程時，常會用到 travel voucher 或 meal voucher 來進行核銷或兌換。"
+ },
+ {
+  "word": "lapse",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[læps]",
+  "etymology": "源自拉丁語 lapsus(滑動、跌落) → 時間滑過或記憶滑落 → 失誤、間隔、失效",
+  "pos_forms": [
+   {
+    "form": "lapse",
+    "type": "n.",
+    "zh": "小錯、失誤、時間的流逝、終止"
+   },
+   {
+    "form": "lapse",
+    "type": "v.",
+    "zh": "期滿失效、走入偏途、衰退"
+   }
+  ],
+  "collocations": [
+   "lapse of concentration",
+   "time lapse",
+   "let the insurance lapse"
+  ],
+  "synonyms": [
+   {
+    "word": "error",
+    "diff": "泛指所有的錯誤，通常是因為知識不足、計算錯誤或判斷錯誤所導致，比 lapse 更正式且範圍更廣。"
+   },
+   {
+    "word": "oversight",
+    "diff": "特指因為『疏忽、沒注意到』而造成的失誤，而非記憶或注意力的短暫中斷。"
+   },
+   {
+    "word": "interval",
+    "diff": "純粹指兩個事件或時間點之間的『時間間隔』，完全中性，沒有 lapse 那種權利失效或狀態變差的含意。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The policyholder forgot to pay the premium on time, causing the life insurance policy to lapse.",
+    "zh": "保戶忘記按時繳納保費，導致這張人壽保險單期滿失效。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I had a temporary lapse of memory and completely forgot my own phone number for a second.",
+    "zh": "我剛才突然短暫失憶，竟然有一秒鐘完全忘記了自己的電話號碼。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "作名詞時常用於指『短時間的注意力不集中或小失誤』（如 lapse of judgment）。在商務與多益情境中，這個字非常常用於法律或保險領域，指合約、會員資格或保險因『逾期未續約而失效』的狀態，通常搭配動詞 let 或 remain。"
+ },
+ {
+  "word": "align",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "[əˈlaɪn]",
+  "etymology": "a-(ad-, 去/向) + lign-(line, 排成線) → 使排成一條線 → 對齊、校準、使一致",
+  "pos_forms": [
+   {
+    "form": "align",
+    "type": "v.",
+    "zh": "對齊、校準、使一致、結盟"
+   },
+   {
+    "form": "alignment",
+    "type": "n.",
+    "zh": "排成直線、校準、結盟"
+   },
+   {
+    "form": "aligned",
+    "type": "adj.",
+    "zh": "對齊的、方向一致的"
+   }
+  ],
+  "collocations": [
+   "align with",
+   "perfectly aligned",
+   "strategic alignment"
+  ],
+  "synonyms": [
+   {
+    "word": "adjust",
+    "diff": "著重於微調、改變某物的狀態或位置以適應特定標準，而不強調『排成直線』或『立場一致』。"
+   },
+   {
+    "word": "coordinate",
+    "diff": "指協調不同人、團體或活動的步調，使大家互相配合順暢運作，偏向專案管理上的整合。"
+   },
+   {
+    "word": "standardize",
+    "diff": "指制定統一的標準、規格或格式，讓所有事物都遵循同一套規則，而非空間或立場上的對齊。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our immediate marketing goals must align with the company's long-term business strategy.",
+    "zh": "我們眼前的行銷目標必須與公司的長期商業策略保持一致。",
+    "tag": "toeic"
+   },
+   {
+    "en": "The wheels on your car look a bit crooked; you should probably get them aligned.",
+    "zh": "你的汽車輪胎看起來有點歪，你可能需要去改一下輪胎對齊校正。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字主要有兩個核心用法：一是物理上的『排成直線、對齊』，如排版、修車校對；二是抽象商業上的『利益、目標或立場一致』，通常搭配介系詞 'with' 使用。在多益考試中，極常出現在跨部門合作、戰略規劃以確保目標『對齊』的情境。"
+ },
+ {
+  "word": "ornament",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[ˈɔrnəmənt]",
+  "etymology": "orn-(裝飾/裝備) + -ament(名詞字尾，表物品) → 用來裝飾的物品 → 裝飾品",
+  "pos_forms": [
+   {
+    "form": "ornament",
+    "type": "n.",
+    "zh": "裝飾品、點綴物"
+   },
+   {
+    "form": "ornament",
+    "type": "v.",
+    "zh": "裝飾、美化"
+   },
+   {
+    "form": "ornamental",
+    "type": "adj.",
+    "zh": "裝飾性的、觀賞用的"
+   }
+  ],
+  "collocations": [
+   "Christmas ornament",
+   "lawn ornament",
+   "serve as an ornament"
+  ],
+  "synonyms": [
+   {
+    "word": "decoration",
+    "diff": "最普遍的字，指任何用來使某物看起來更美觀的裝飾行為或物品，範圍比 ornament 更廣。"
+   },
+   {
+    "word": "accessory",
+    "diff": "指『配件、配飾』，通常是為了增加主體的功能或美感而附加的次要物件，如皮帶、圍巾或汽車配件。"
+   },
+   {
+    "word": "embellishment",
+    "diff": "側重於為了讓外觀更華麗而添加的『細節修飾』，也常用於文章或故事的潤色、誇大。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The upscale hotel lobby features exquisite glass ornaments crafted by local artisans.",
+    "zh": "這家高檔飯店的大廳陳列著由當地工匠製作的精緻玻璃裝飾品。",
+    "tag": "toeic"
+   },
+   {
+    "en": "We spent the whole afternoon hanging colorful ornaments on the Christmas tree.",
+    "zh": "我們花了整個下午在聖誕樹上掛滿五彩繽紛的裝飾品。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常指具體的、較小型的裝飾物件，例如小擺飾、首飾或手工藝品。在多益考試中偶爾會出現在室內設計、辦公空間美化或零售商品販售的情境；日常生活中最常用於節慶裝飾（如聖誕樹裝飾）或家居擺設的話題。"
+ },
+ {
+  "word": "solemn",
+  "level": "C1",
+  "toeic_freq": "low",
+  "kk": "[ˈsɑləm]",
+  "etymology": "源自拉丁語 sollemnis(每年的、宗教節日的) → 像宗教儀式一樣正式的 → 莊嚴的、嚴肅的",
+  "pos_forms": [
+   {
+    "form": "solemn",
+    "type": "adj.",
+    "zh": "莊嚴的、嚴肅的、鄭重的"
+   },
+   {
+    "form": "solemnity",
+    "type": "n.",
+    "zh": "莊嚴、肅穆、鄭重其事"
+   },
+   {
+    "form": "solemnly",
+    "type": "adv.",
+    "zh": "莊嚴地、嚴肅地"
+   }
+  ],
+  "collocations": [
+   "solemn promise",
+   "solemn occasion",
+   "look solemn"
+  ],
+  "synonyms": [
+   {
+    "word": "serious",
+    "diff": "最常見的字，泛指不苟言笑、情況嚴重或態度認真，但不像 solemn 帶有儀式感或神聖的莊嚴感。"
+   },
+   {
+    "word": "grave",
+    "diff": "著重於事情的『嚴重性、危急程度』，或是人的表情因擔憂重大後果而顯得極其沉重、憂慮。"
+   },
+   {
+    "word": "earnest",
+    "diff": "側重於人的態度『真誠、熱切、認真』，通常是用出於內心的熱忱，而非顯得嚴肅或沉重。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The chief executive officer made a solemn promise to the shareholders that transparency would be maintained throughout the restructuring.",
+    "zh": "執行長向股東們做出鄭重承諾，在整個重組過程中都會保持透明度。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Everyone's face turned solemn when the doctor walked out of the operating room with a quiet sigh.",
+    "zh": "當醫生輕聲嘆氣走出手術室時，每個人的表情都變得非常嚴肅。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容氣氛、場合或表情非常『莊嚴、肅穆』，甚至帶有宗教或法律上的神聖感。在職場或多益情境中，常用於『鄭重的承諾』（solemn promise）或宣誓；日常生活中則用來形容遇到重大事件時，人們收起笑容、顯得非常嚴肅的樣子。"
+ },
+ {
+  "word": "hunch",
+  "level": "C1",
+  "toeic_freq": "low",
+  "kk": "[hʌntʃ]",
+  "etymology": "源自中古英語 hunchen(推、推擠) → 原指身體向前推或隆起，後引申為直覺在腦中『推』了一把的感覺 → 直覺、預感",
+  "pos_forms": [
+   {
+    "form": "hunch",
+    "type": "n.",
+    "zh": "直覺、預感"
+   },
+   {
+    "form": "hunch",
+    "type": "v.",
+    "zh": "弓起身體、聳肩"
+   }
+  ],
+  "collocations": [
+   "have a hunch",
+   "follow a hunch",
+   "confirm a hunch"
+  ],
+  "synonyms": [
+   {
+    "word": "intuition",
+    "diff": "較為正式且抽象的字，指不經過理性思考就能理解或感知事情的『直覺力』或本能。"
+   },
+   {
+    "word": "premonition",
+    "diff": "多指對未來事情的預感，且通常帶有強烈的『不祥預感』或負面含意。"
+   },
+   {
+    "word": "feeling",
+    "diff": "最通俗的字，泛指任何心理上的感覺或看法，沒有 hunch 那種『基於微小跡象而產生的猜測』之意。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "I had a strong hunch that the competitor would lower their prices, so I prepared a backup marketing strategy in advance.",
+    "zh": "我強烈預感到競爭對手會降價，所以我提前準備了備用的行銷策略。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I've just got a hunch that he's not telling us the whole story about what happened last night.",
+    "zh": "我總覺得他對昨晚發生的事沒把真相完全告訴我們。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來指一種『雖然沒有明確證據，但心裡隱約覺得是這樣』的直覺或猜測。在多益考試中較少見，偶爾出現在商務決策中憑直覺做出判斷的對話；在日常生活中非常常用，最常見的搭配是 'have a hunch'。作動詞時則指駝背或把身體弓起來。"
+ },
+ {
+  "word": "decisive",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "[dɪˈsaɪsɪv]",
+  "etymology": "de-(向下/加強) + cid-(cut, 切斷) + -ive(形容詞字尾) → 切斷所有猶豫的 → 果斷的、決定性的",
+  "pos_forms": [
+   {
+    "form": "decisive",
+    "type": "adj.",
+    "zh": "果斷的、決定性的、確定的"
+   },
+   {
+    "form": "decide",
+    "type": "v.",
+    "zh": "決定、下決心"
+   },
+   {
+    "form": "decisively",
+    "type": "adv.",
+    "zh": "果斷地、決然地"
+   },
+   {
+    "form": "decisiveness",
+    "type": "n.",
+    "zh": "果斷、決斷力"
+   }
+  ],
+  "collocations": [
+   "decisive factor",
+   "take decisive action",
+   "decisive victory"
+  ],
+  "synonyms": [
+   {
+    "word": "crucial",
+    "diff": "著重於事情的『關鍵性與重要性』，缺少了 decisive 那種『做出最終判決、徹底扭轉局勢』的含意。"
+   },
+   {
+    "word": "resolute",
+    "diff": "側重於形容人的意志『堅定不移、不屈不撓』，通常用來形容性格或態度，而非用來形容局勢。"
+   },
+   {
+    "word": "definitive",
+    "diff": "指某個答案、版本或結論是『最終且不可更改的』，帶有權威性與標竿性。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The manager's decisive action to lower prices helped the company maintain its market share during the economic downturn.",
+    "zh": "經理果斷採取降價行動，幫助公司在經濟低迷時期維持了市場份額。",
+    "tag": "toeic"
+   },
+   {
+    "en": "You need to be more decisive when you order food, or we will be standing in this line forever.",
+    "zh": "你點餐的時候得果斷一點，不然我們就要一直站在這裡排隊了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字主要有兩個核心用法：一是形容人『做事果斷、不猶豫』；二是形容某個事物或關鍵因素具有『決定性的影響』，能讓局勢明朗化。在多益考試中，經常與 action 或 factor 搭配，出現在危機處理或市場競爭的情境中。"
+ },
+ {
+  "word": "novice",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[ˈnɑvɪs]",
+  "etymology": "nov-(new, 新的) + -ice(名詞字尾，表示人) → 新手、新來的人",
+  "pos_forms": [
+   {
+    "form": "novice",
+    "type": "n.",
+    "zh": "新手、初學者"
+   },
+   {
+    "form": "novitiate",
+    "type": "n.",
+    "zh": "見習期、實習期"
+   }
+  ],
+  "collocations": [
+   "a complete novice",
+   "novice user",
+   "novice programmer"
+  ],
+  "synonyms": [
+   {
+    "word": "beginner",
+    "diff": "最普遍、中性的字，泛指任何剛開始學習某項技能或活動的人，沒有特別的語氣。"
+   },
+   {
+    "word": "amateur",
+    "diff": "指『業餘愛好者』，做某件事是出於興趣而非為了賺錢，他的技術可能是成熟的，與經驗是否全新無關。"
+   },
+   {
+    "word": "tyro",
+    "diff": "較為正式且罕見的字，指剛開始展露頭角或學習某種專業藝術、科學的初學者。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Our new user interface is designed to be intuitive, making it easy for even a complete novice to navigate.",
+    "zh": "我們的新使用者介面設計得非常直覺，即使是完全沒有經驗的新手也能輕鬆操作。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I'm just a novice when it comes to gardening, so most of my plants end up dying.",
+    "zh": "談到園藝我只是個新手，所以我種的植物大多最後都死掉了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來強調某人在某個領域『完全沒有經驗、剛入門』的狀態。在多益考試中，常用於軟體系統的操作難易度說明，或企業培訓初階員工的情境；在日常生活中，則常用來謙虛地表示自己對某個新興趣或技能還很不熟練。"
+ },
+ {
+  "word": "heir",
+  "level": "C1",
+  "toeic_freq": "low",
+  "kk": "[ɛr]",
+  "etymology": "源自拉丁語 heres(繼承人) → 法律上合法繼承財產或身分的人",
+  "pos_forms": [
+   {
+    "form": "heir",
+    "type": "n.",
+    "zh": "繼承人、嗣子"
+   },
+   {
+    "form": "heiress",
+    "type": "n.",
+    "zh": "女性繼承人"
+   },
+   {
+    "form": "heritage",
+    "type": "n.",
+    "zh": "繼承物、遺產、傳統文化"
+   }
+  ],
+  "collocations": [
+   "sole heir",
+   "heir to the throne",
+   "legal heir"
+  ],
+  "synonyms": [
+   {
+    "word": "successor",
+    "diff": "側重於職位、頭銜或事業的『接班人、繼任者』，不一定涉及血緣關係或財產繼承。"
+   },
+   {
+    "word": "beneficiary",
+    "diff": "法律與保險術語，指信託、遺囑或保險金的『受益人』，不一定是家族的法定期望繼承人。"
+   },
+   {
+    "word": "inheritor",
+    "diff": "較為通俗的字，泛指任何『收到遺產或基因特徵的人』，而 heir 更有合法性與身分正統性的語感。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Following the founder's sudden passing, his eldest daughter was named the sole heir to the multi-million dollar shipping empire.",
+    "zh": "在創辦人突然過世後，他的長女被指定為這座價值數百萬美元航運帝國的唯一繼承人。",
+    "tag": "toeic"
+   },
+   {
+    "en": "He completely cut ties with his wealthy family, knowing he would forfeit his right to be the heir.",
+    "zh": "他完全與富裕的家族斷絕了關係，他很清楚這會讓自己放棄成為繼承人的權利。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來指法定的法律繼承人，最常搭配的句型是 'heir to + 財產/地位'，注意此時介系詞要用 to 而不是 of。在多益考試中，偶爾會出現在家族企業權力交班或法律遺產爭議的情境；日常生活中則常出現在討論豪門八卦、影集劇情或歷史王室的話題中。發音時 h 不發音，與 'air' 相同。"
+ },
+ {
+  "word": "intact",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[ɪnˈtækt]",
+  "etymology": "in-(not, 未) + tact-(touch, 接觸/觸碰) → 未被碰觸過的 → 完好無損的、完整的",
+  "pos_forms": [
+   {
+    "form": "intact",
+    "type": "adj.",
+    "zh": "完好無損的、完整無缺的"
+   }
+  ],
+  "collocations": [
+   "remain intact",
+   "survive intact",
+   "keep something intact"
+  ],
+  "synonyms": [
+   {
+    "word": "whole",
+    "diff": "最普遍的字，指某物是『全部、完整的』，沒有缺少任何部分，但不及 intact 強調經歷危機或時間後仍免於受損的狀態。"
+   },
+   {
+    "word": "damaged",
+    "diff": "此為反義字，但常用於與 intact 作比較；而相近的 undamaged 則是純粹指『沒有受到損害』，而 intact 更有『原本結構或形狀完全沒變』的細微語感。"
+   },
+   {
+    "word": "complete",
+    "diff": "側重於必要的元件、部分都齊全了，達到『滿分、完成』的狀態，而不是強調未受破壞。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "Despite the severe turbulent weather during transit, all the fragile electronic components arrived intact.",
+    "zh": "儘管運送過程中遇到了惡劣的暴風雨天氣，所有易碎的電子元件送達時依然完好無損。",
+    "tag": "toeic"
+   },
+   {
+    "en": "The old castle surprisingly remained intact even after hundreds of years of wars and natural disasters.",
+    "zh": "這座古堡令人驚訝的是，即使經歷了數百年的戰爭與天災，依然保存得完整無缺。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容某個物體、計畫或名譽，在經歷了某場災難、運送過程、時間考驗或衝擊之後，依然『奇蹟般地沒有受到任何損壞或改變』。在多益考試中，最常出現在物流貨運、包裝說明或保險理賠的情境；日常生活中則多用於物品保存、古蹟歷史或意外後的狀況描述。"
+ },
+ {
+  "word": "bureaucracy",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[bjʊˈrɑkrəsɪ]",
+  "etymology": "bureau(辦公桌/辦事處) + -cracy(統治/政體) → 坐在辦公桌前的人在實施統治 → 官僚體制、繁文縟節",
+  "pos_forms": [
+   {
+    "form": "bureaucracy",
+    "type": "n.",
+    "zh": "官僚體制、繁文縟節、官僚作風"
+   },
+   {
+    "form": "bureaucratic",
+    "type": "adj.",
+    "zh": "官僚主義的、繁瑣的"
+   },
+   {
+    "form": "bureaucrat",
+    "type": "n.",
+    "zh": "官僚、官僚主義官員"
+   }
+  ],
+  "collocations": [
+   "corporate bureaucracy",
+   "cut through the bureaucracy",
+   "bureaucratic delays"
+  ],
+  "synonyms": [
+   {
+    "word": "red tape",
+    "diff": "口語且強烈帶有負面含意，特指那些讓人覺得沒效率、浪費時間的『繁文縟節』或僵化程序。"
+   },
+   {
+    "word": "administration",
+    "diff": "中性字，單純指機構內部的『行政管理』或行政部門，不一定帶有效率低下的負面批評。"
+   },
+   {
+    "word": "management",
+    "diff": "著重於對人、財政或業務的『經營與管理』，強調主導大局的決策，而非死板的行政程序。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The merger was supposed to speed up operations, but it only created more corporate bureaucracy.",
+    "zh": "這次合併原本應該要加速營運，結果卻只產生了更多企業內部的官僚體制。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I hated dealing with the government bureaucracy just to renew my driver's license.",
+    "zh": "光是為了換發駕照就要跟政府機關的繁文縟節打交道，真的很討厭。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這個字可以用來中性地形容大型組織（政府、大企業）的『行政體系』，但在日常跟商務職場上，更常用來抱怨體制僵化、審核流程過長造成的『效率低下』。如果想特別強調手續繁瑣到讓人抓狂，口語上可以直接用 'red tape'。"
+ },
+ {
+  "word": "revolt",
+  "level": "C1",
+  "toeic_freq": "low",
+  "kk": "[rɪˈvolt]",
+  "etymology": "re-(反/向後) + volt(turn, 轉動) → 轉身反抗 → 反叛、起義",
+  "pos_forms": [
+   {
+    "form": "revolt",
+    "type": "v.",
+    "zh": "反叛、起義、反抗、使厭惡"
+   },
+   {
+    "form": "revolt",
+    "type": "n.",
+    "zh": "反叛、起義、造反"
+   },
+   {
+    "form": "revolting",
+    "type": "adj.",
+    "zh": "令人厭惡的、噁心的"
+   }
+  ],
+  "collocations": [
+   "revolt against",
+   "crush a revolt",
+   "spark a revolt"
+  ],
+  "synonyms": [
+   {
+    "word": "rebel",
+    "diff": "作動詞時常指公開反抗權威、法律或傳統，不一定規模大到推翻政權；作名詞指『反叛者』本人。"
+   },
+   {
+    "word": "riot",
+    "diff": "指群眾因不滿而引發的『暴動、騷亂』，通常缺乏明確的政治目標或長遠計畫，且帶有破壞性。"
+   },
+   {
+    "word": "uprising",
+    "diff": "指針對政府或統治者的『小型起義』或局部暴動，通常是突發性且規模較小。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The warehouse staff threatened to revolt against the management if the new overtime policy wasn't revised.",
+    "zh": "如果新的加班政策不修改，倉庫員工威脅要集體反抗管理層。",
+    "tag": "toeic"
+   },
+   {
+    "en": "The smell coming from the refrigerator was so bad it practically revolted me.",
+    "zh": "冰箱裡傳出的味道太難聞了，簡直讓我倒胃口。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "作動詞時有兩個核心用法：一是『反抗權威或體制』，通常接介系詞 against；二是生理或心理上的『強烈厭惡』。在多益情境中偶爾出現在員工對勞動條件極端不滿的脈絡；日常生活中則常用它的形容詞形式 'revolting' 來形容極度噁心的人事物。"
+ },
+ {
+  "word": "plague",
+  "level": "B2",
+  "toeic_freq": "low",
+  "kk": "[pleg]",
+  "etymology": "源自拉丁語 plaga(打擊、傷口) → 上天帶來的打擊 → 瘟疫、折磨",
+  "pos_forms": [
+   {
+    "form": "plague",
+    "type": "n.",
+    "zh": "瘟疫、傳染病、禍害"
+   },
+   {
+    "form": "plague",
+    "type": "v.",
+    "zh": "不斷困擾、折磨、使苦惱"
+   }
+  ],
+  "collocations": [
+   "be plagued by",
+   "avoid like the plague",
+   "bubonic plague"
+  ],
+  "synonyms": [
+   {
+    "word": "epidemic",
+    "diff": "指某種傳染病在特定地區、特定時間內大規模快速擴散的「現象」，不一定像 plague 帶有強烈的致命或災難感。"
+   },
+   {
+    "word": "afflict",
+    "diff": "純粹作動詞用，指疾病、貧困或災難等帶來的「折磨」與痛苦，沒有瘟疫或傳染病的字面意思。"
+   },
+   {
+    "word": "infestation",
+    "diff": "特指害蟲（如老鼠、蟑螂、蝗蟲）大量滋生所造成的「猖獗」與肆虐。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The tech start-up has been plagued by persistent software glitches and security breaches since its app launch.",
+    "zh": "這家科技初創公司自應用程式發布以來，就一直受到持續的軟體錯誤和安全漏洞的困擾。",
+    "tag": "toeic"
+   },
+   {
+    "en": "I don't know why she's dating him; her friends all warned her to avoid him like the plague.",
+    "zh": "我真不懂她為什麼要跟他交往，她的朋友們都警告過她要對他避之唯恐不及。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "作名詞時最古老的意思是「鼠疫」或天災般的瘟疫。但在現代商業與日常生活中，極常轉作動詞，並以被動語態 'be plagued by' 出現，用來形容某人或某公司長期被「問題、故障、傷痛、醜聞」等壞事沒完沒了地折磨。日常片語 'avoid like the plague' 則是形容非常厭惡、極力想躲開某人或某事。"
+ },
+ {
+  "word": "deem",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[dim]",
+  "etymology": "源自古英語 dēman(判斷、思考) → 經過思考後做出正式的判定 → 認為、視為",
+  "pos_forms": [
+   {
+    "form": "deem",
+    "type": "v.",
+    "zh": "認為、視為、判定"
+   }
+  ],
+  "collocations": [
+   "deem it necessary",
+   "deem appropriate",
+   "be deemed unacceptable"
+  ],
+  "synonyms": [
+   {
+    "word": "consider",
+    "diff": "最常用的普遍字，指經過一段時間的思考或討論後『認為』，語氣較為主觀且生活化。"
+   },
+   {
+    "word": "regard",
+    "diff": "常用於 'regard A as B' 的結構，著重於從特定角度或觀點來看待某人或某事。"
+   },
+   {
+    "word": "judge",
+    "diff": "側重於根據既有的證據、標準或法律，做出客觀的『評判』或下結論。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The board of directors may take any legal action they deem appropriate to protect the company's intellectual property.",
+    "zh": "董事會得採取任何他們認為適當的法律行動，以保護公司的智慧財產權。",
+    "tag": "toeic"
+   },
+   {
+    "en": "The building was deemed unsafe for occupancy after the inspectors found structural damage in the basement.",
+    "zh": "在檢查員發現地下室有結構性損傷後，這棟建築被判定不安全、不適合居住。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "這是一個語氣非常正式且帶有權威感的字，通常用於法律、官方公告、正式商業合約或政策中，表示某個權力機構或專家做出的『正式認定』。它最常見的句型是 'deem + 受詞 + 形容詞'（例如 'deem it necessary'），此時不需要加 as。"
+ },
+ {
+  "word": "attain",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[əˈten]",
+  "etymology": "ad-(to, 去/向) + tang-(touch, 接觸/觸及) → 去觸及到目標 → 達到、獲得",
+  "pos_forms": [
+   {
+    "form": "attain",
+    "type": "v.",
+    "zh": "達到、獲得、贏得"
+   },
+   {
+    "form": "attainable",
+    "type": "adj.",
+    "zh": "可達到的、可實現的"
+   },
+   {
+    "form": "attainment",
+    "type": "n.",
+    "zh": "達到、成就、造詣"
+   }
+  ],
+  "collocations": [
+   "attain a goal",
+   "attain a rank",
+   "attain proficiency"
+  ],
+  "synonyms": [
+   {
+    "word": "achieve",
+    "diff": "最常用來指透過努力、技能或勇氣克服困難，最終『實現』長期目標或成就。"
+   },
+   {
+    "word": "acquire",
+    "diff": "著重於『逐漸獲得』知識、技能、習慣或公司資產的過程。"
+   },
+   {
+    "word": "obtain",
+    "diff": "多指透過特定的程序、申請或努力，正式地『拿到』或『取得』某種具體或抽象的東西。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "After five years of intensive training, she finally managed to attain the rank of senior project manager.",
+    "zh": "經過五年的密集培訓，她終於成功晉升為高級專案經理。",
+    "tag": "toeic"
+   },
+   {
+    "en": "It is difficult to attain a perfect balance between work and life, but it is worth striving for.",
+    "zh": "要在工作和生活之間達到完美的平衡很困難，但非常值得去爭取。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用於經過長期努力後達到某種『高標準、地位、年齡』或特定的抽象狀態。在多益中常出現在職業生涯成就、達到特定業績指標的情境；日常生活中則多用於談論人生長遠目標或理想狀態的實現。"
+ },
+ {
+  "word": "imminent",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[ˈɪmənənt]",
+  "etymology": "im-(in, 進入/向內) + min-(pro-min, 突出/懸掛) → 懸掛在頭頂上即將落下的 → 即將發生的、逼近的",
+  "pos_forms": [
+   {
+    "form": "imminent",
+    "type": "adj.",
+    "zh": "即將發生的、臨近的"
+   },
+   {
+    "form": "imminently",
+    "type": "adv.",
+    "zh": "迫切地、即將發生地"
+   },
+   {
+    "form": "imminence",
+    "type": "n.",
+    "zh": "迫切、危急"
+   }
+  ],
+  "collocations": [
+   "imminent danger",
+   "imminent departure",
+   "imminent threat"
+  ],
+  "synonyms": [
+   {
+    "word": "impending",
+    "diff": "常指令人擔憂、不願面對或通常帶有負面、沉重感的事物即將到來。"
+   },
+   {
+    "word": "approaching",
+    "diff": "中性字，單純指時間或空間上的接近，如季節、節日或列車的進站。"
+   },
+   {
+    "word": "forthcoming",
+    "diff": "多指已經計畫好、即將公布或出版的人事物，帶有令人期待的正面含意。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The factory announced a temporary suspension of operations due to the imminent shortage of raw materials.",
+    "zh": "由於原料短缺在即，該工廠宣布暫時停工。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Grab your umbrella before heading out; those dark clouds mean rain is imminent.",
+    "zh": "出門前拿把傘吧，那些烏雲意味著快要下雨了。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來形容『壞事、危險、天災』等不好的事情在極短時間內、不可避免地即將發生。在多益考試中，多用於突發危機、供應鏈中斷或緊急疏散的情境；日常生活中則常用於天氣劇變、班機即將起飛或某個期限迫在眉睫。"
+ },
+ {
+  "word": "reconcile",
+  "level": "C1",
+  "toeic_freq": "medium",
+  "kk": "[ˈrɛkənˌsaɪl]",
+  "etymology": "re-(再次) + con-(共同) + cili-(召集/和解) → 再次召集到一起 → 相互和解、使一致",
+  "pos_forms": [
+   {
+    "form": "reconcile",
+    "type": "v.",
+    "zh": "調和、使一致、使和解"
+   },
+   {
+    "form": "reconciliation",
+    "type": "n.",
+    "zh": "和解、調和、對帳"
+   },
+   {
+    "form": "reconcilable",
+    "type": "adj.",
+    "zh": "可調和的、可相容的"
+   }
+  ],
+  "collocations": [
+   "reconcile an account",
+   "reconcile differences",
+   "reconcile A with B"
+  ],
+  "synonyms": [
+   {
+    "word": "compromise",
+    "diff": "著重於雙方各自做出讓步（折衷）來達成協議，而不一定是指消除觀點上的矛盾。"
+   },
+   {
+    "word": "resolve",
+    "diff": "指解決爭端、問題或危機，讓事情有個明確的結果，但不強調兩者『對齊或恢復和諧』的過程。"
+   },
+   {
+    "word": "coordinate",
+    "diff": "指協調、整合不同部門或活動使其順暢運作，通常用於項目管理，而非消除衝突或落差。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The accounting department spent hours trying to reconcile the monthly bank statements with the company's internal ledger.",
+    "zh": "會計部花了好幾個小時，試圖將每月的銀行對帳單與公司內部帳簿進行核對調和。",
+    "tag": "toeic"
+   },
+   {
+    "en": "It's sometimes hard to reconcile your career ambitions with your personal life.",
+    "zh": "有時候要讓你的事業野心與個人生活取得平衡，真的很不容易。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "在多益的商務情境中，這個字非常常出現在財會領域，特別是財務核對、對帳（reconcile accounts）的動作。在日常生活中，則多用於抽象概念的調和（如理想與現實、工作與生活）或人際關係、意見不合時的『破鏡重圓』與『和解』。"
+ },
+ {
+  "word": "compensation",
+  "level": "B2",
+  "toeic_freq": "high",
+  "kk": "[ˌkɑmpənˈseʃən]",
+  "etymology": "com-(共同) + pens-(花費/稱重) + -ation(名詞字尾) → 將付出的代價共同平秤回來 → 補償、報酬",
+  "pos_forms": [
+   {
+    "form": "compensation",
+    "type": "n.",
+    "zh": "補償金、賠償金、薪資報酬"
+   },
+   {
+    "form": "compensate",
+    "type": "v.",
+    "zh": "補償、賠償、彌補"
+   },
+   {
+    "form": "compensatory",
+    "type": "adj.",
+    "zh": "補償性的、賠償的"
+   }
+  ],
+  "collocations": [
+   "financial compensation",
+   "compensation package",
+   "seek compensation for"
+  ],
+  "synonyms": [
+   {
+    "word": "reimbursement",
+    "diff": "特指『核銷代墊款項』，也就是你先幫公司付錢，事後拿發票憑證去報帳拿回來的錢。"
+   },
+   {
+    "word": "remuneration",
+    "diff": "極為正式的字眼，純粹指工作所獲得的『薪酬、勞務報酬』，不包含因受損害而得到的補償。"
+   },
+   {
+    "word": "indemnity",
+    "diff": "多用於法律或保險領域，指針對特定損害或法律責任的『損害賠償保障』或賠償金。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The tech firm offers an attractive compensation package, including stock options and comprehensive health insurance.",
+    "zh": "這間科技公司提供非常吸引人的薪酬方案，包含股票期權和完善的醫療保險。",
+    "tag": "toeic"
+   },
+   {
+    "en": "The airline provided free hotel vouchers as compensation for the three-hour flight delay.",
+    "zh": "航空公司提供了免費的飯店住宿券，作為班機延誤三小時的補償。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "在多益考試中，這個字非常高機率用來指『薪資福利總和』（如 compensation package），涵蓋底薪、獎金跟津貼。而在日常生活中，則常用來指因為對方疏失（如班機取消、產品瑕疵）而獲得的物資或金錢『補償』。注意與 reimbursement（報帳核銷）在商業情境下的區別。"
+ },
+ {
+  "word": "terrain",
+  "level": "B2",
+  "toeic_freq": "medium",
+  "kk": "[təˋren]",
+  "etymology": "terr-(土地) + -ain(名詞/形容詞字尾，表示與...有關) → 與土地相關的 → 地形、地勢",
+  "pos_forms": [
+   {
+    "form": "terrain",
+    "type": "n.",
+    "zh": "地形、地勢、地帶"
+   }
+  ],
+  "collocations": [
+   "rough terrain",
+   "mountainous terrain",
+   "all-terrain vehicle"
+  ],
+  "synonyms": [
+   {
+    "word": "landscape",
+    "diff": "著重於視覺上的自然風景、景色，包含樹木、河流等整體畫面，而不單指地勢起伏。"
+   },
+   {
+    "word": "topography",
+    "diff": "較為地理學術語，指某個地區的『地形測量學』或詳細的地理特徵結構。"
+   },
+   {
+    "word": "ground",
+    "diff": "最普遍的字，單指腳下踩的地面、土地，沒有特別強調地勢的起伏或特徵。"
+   }
+  ],
+  "examples": [
+   {
+    "en": "The surveyors encountered difficulties mapping the area due to the rocky and uneven terrain.",
+    "zh": "由於該地區岩石密佈且地勢不平，測量員在繪製地圖時遇到了困難。",
+    "tag": "toeic"
+   },
+   {
+    "en": "Make sure you wear sturdy hiking boots because the hiking trail covers some pretty rough terrain.",
+    "zh": "一定要穿著堅固的登山鞋，因為這條登山步道會經過一些相當崎嶇的地形。",
+    "tag": "daily"
+   }
+  ],
+  "usage": "通常用來描述某個特定地理區域的自然物理特徵，特別是偏向崎嶇、多山或艱困的地勢。在多益考試中常出現在工程測量、戶外產品測試或旅遊導覽的情境中；日常生活中則多用於健行、越野運動等話題。"
  }
 ]
